@@ -1,9 +1,6 @@
-{% extends "layouts/base.html" %}
-
 <!DOCTYPE html>
-<!-- saved from url=(0069)https://demos.creative-tim.com/material-kit-pro/pages/mobile-app.html -->
-<html lang="en" itemscope="" itemtype="http://schema.org/WebPage" class="">
-  <head>
+<html lang="en">
+<head>
     <title>The Gulmohar</title>
 
     <link
@@ -55,1885 +52,18 @@
     <link href="./landing6_files/nucleo-icons.css" rel="stylesheet" />
     <link href="./landing6_files/nucleo-svg.css" rel="stylesheet" />
   </head>
-  {% block content %} {% load static %}
-  <noscript
-    ><iframe
-      src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6"
-      height="0"
-      width="0"
-      style="display: none; visibility: hidden"
-    ></iframe
-  ></noscript>
-
-  <nav
-    class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3 navbar-transparent"
-  >
-    <div class="container">
-      <a
-        class="navbar-brand text-white d-none d-md-block"
-        href="https://demos.creative-tim.com/material-kit-pro/index"
-        rel="tooltip"
-        title="Designed and Coded by Creative Tim"
-        data-placement="bottom"
-        target="_blank"
-      >
-        Material Kit 2 PRO
-      </a>
-      <a
-        class="navbar-brand text-white d-block d-md-none"
-        href="https://demos.creative-tim.com/material-kit-pro/index"
-        rel="tooltip"
-        title="Designed and Coded by Creative Tim"
-        data-placement="bottom"
-        target="_blank"
-      >
-        Material Design
-      </a>
-      <a
-        href="https://www.creative-tim.com/product/material-design-system-pro#pricingCard"
-        class="btn btn-sm bg-gradient-primary mb-0 ms-auto d-lg-none d-block"
-        >Buy Now</a
-      >
-      <button
-        class="navbar-toggler shadow-none ms-2"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navigation"
-        aria-controls="navigation"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon mt-2">
-          <span class="navbar-toggler-bar bar1"></span>
-          <span class="navbar-toggler-bar bar2"></span>
-          <span class="navbar-toggler-bar bar3"></span>
-        </span>
-      </button>
-      <div
-        class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0"
-        id="navigation"
-      >
-        <ul class="navbar-nav navbar-nav-hover ms-auto">
-          <li class="nav-item dropdown dropdown-hover mx-2">
-            <a
-              class="nav-link ps-2 d-flex cursor-pointer align-items-center"
-              role="button"
-              id="dropdownMenuPages10"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i class="material-icons opacity-6 me-2 text-md">dashboard</i>
-              Pages
-              <img
-                src="./landing6_files/down-arrow-white.svg"
-                alt="down-arrow"
-                class="arrow ms-2 d-lg-block d-none"
-              />
-              <img
-                src="./landing6_files/down-arrow-dark.svg"
-                alt="down-arrow"
-                class="arrow d-lg-none d-block ms-auto"
-              />
-            </a>
-            <div
-              class="dropdown-menu ms-n3 dropdown-menu-animation dropdown-xl p-3 border-radius-xl mt-0 mt-lg-3"
-              aria-labelledby="dropdownMenuPages10"
-            >
-              <div class="row d-none d-lg-block">
-                <div class="col-12 px-4 py-2">
-                  <div class="row">
-                    <div class="col-4 position-relative">
-                      <div
-                        class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1"
-                      >
-                        Landing Pages
-                      </div>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/coworking.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Coworking</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/rental.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Rental</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/case-study.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Case Study</span>
-                      </a>
-                      <div
-                        class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3"
-                      >
-                        Company
-                      </div>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/about-us.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>About Us</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/pricing.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Pricing</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/career.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Career</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/work-with-us.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Work with us</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/terms.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Terms &amp; Conditions</span>
-                      </a>
-                      <hr class="vertical dark" />
-                    </div>
-                    <div class="col-4 position-relative">
-                      <div
-                        class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1"
-                      >
-                        Support
-                      </div>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/help-center.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Help Center</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/help-center-basic.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Help Center Basic</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/contact-us.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Contact Us</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/contact-us-simple.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Contact Us Basic</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/faq.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>FAQ</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/privacy.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Privacy</span>
-                      </a>
-                      <div
-                        class="dropdown-header text-dark font-weight-bolder d-flex align-items-center mt-3 px-1"
-                      >
-                        Apps
-                      </div>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/mobile-app.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Mobile App</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/desktop-app.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Desktop App</span>
-                      </a>
-                      <hr class="vertical dark" />
-                    </div>
-                    <div class="col-4">
-                      <div
-                        class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1"
-                      >
-                        Blogs
-                      </div>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/blog/single-article.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Single Article</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/blog/blog-posts.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Blog Posts</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/blog/categories.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Categories</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/blog/author.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Author</span>
-                      </a>
-                      <div
-                        class="dropdown-header text-dark font-weight-bolder d-flex align-items-center mt-3 px-1"
-                      >
-                        Extra
-                      </div>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/automotive.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Automotive</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/virtual-reality.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Virtual Reality</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/smart-home.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Smart Home</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/chat.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Chat</span>
-                      </a>
-                      <a
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/product-page.html"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Product Page</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-lg-none">
-                <div
-                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"
-                >
-                  Landing Pages
-                </div>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/coworking.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Coworking
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/rental.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Rental
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/case-study.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Case Study
-                </a>
-                <div
-                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3"
-                >
-                  Company
-                </div>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/about-us.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  About Us
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/pricing.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Pricing
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/career.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Career
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/work-with-us.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Work with us
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/terms.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Terms &amp; Conditions
-                </a>
-                <div
-                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3"
-                >
-                  Support
-                </div>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/help-center.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Help Center
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/help-center-basic.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Help Center Basic
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/contact-us.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Contact Us
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/contact-us-simple.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Contact Us Basic
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/faq.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  FAQ
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/privacy.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Privacy
-                </a>
-                <div
-                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center mt-3 px-0"
-                >
-                  Apps
-                </div>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/mobile-app.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Mobile App
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/desktop-app.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Desktop App
-                </a>
-                <div
-                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center mt-3 px-0"
-                >
-                  Blogs
-                </div>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/blog/single-article.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Single Article
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/blog/blog-posts.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Blog Posts
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/blog/categories.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Categories
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/blog/author.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Author
-                </a>
-                <div
-                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center mt-3 px-0"
-                >
-                  Extra
-                </div>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/automotive.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Automotive
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/virtual-reality.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Virtual Reality
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/smart-home.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Smart Home
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/chat.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Chat
-                </a>
-                <a
-                  href="https://demos.creative-tim.com/material-kit-pro/pages/product-page.html"
-                  class="dropdown-item border-radius-md"
-                >
-                  Product Page
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
-            <a
-              class="nav-link ps-2 d-flex cursor-pointer align-items-center"
-              role="button"
-              id="dropdownMenuAccount"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i class="material-icons opacity-6 me-2 text-md">contacts</i>
-              Account
-              <img
-                src="./landing6_files/down-arrow-white.svg"
-                alt="down-arrow"
-                class="arrow ms-2 d-lg-block d-none"
-              />
-              <img
-                src="./landing6_files/down-arrow-dark.svg"
-                alt="down-arrow"
-                class="arrow d-lg-none d-block ms-auto"
-              />
-            </a>
-            <div
-              class="dropdown-menu dropdown-menu-animation dropdown-md border-radius-xl p-3 mt-0 mt-lg-3"
-              aria-labelledby="dropdownMenuAccount"
-            >
-              <div class="d-none d-lg-flex">
-                <ul class="list-group w-100">
-                  <li
-                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
-                  >
-                    <a
-                      class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
-                      id="dropdownSignIn"
-                    >
-                      <span>Sign In</span>
-                      <img
-                        src="./landing6_files/down-arrow.svg"
-                        alt="down-arrow"
-                        class="arrow ms-auto"
-                      />
-                    </a>
-                    <div
-                      class="dropdown-menu mt-0 py-3 px-2"
-                      aria-labelledby="dropdownSignIn"
-                    >
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/sign-in/sign-in-cover.html"
-                      >
-                        <span>Cover</span>
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/sign-in/sign-in-illustration.html"
-                      >
-                        <span>Illustration</span>
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/sign-in/sign-in-basic.html"
-                      >
-                        <span>Basic</span>
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md"
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/sign-in/sign-in-simple.html"
-                      >
-                        <span>Simple</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li
-                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
-                  >
-                    <a
-                      class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
-                      id="dropdownSignUp"
-                    >
-                      <span>Sign Up</span>
-                      <img
-                        src="./landing6_files/down-arrow.svg"
-                        alt="down-arrow"
-                        class="arrow ms-auto"
-                      />
-                    </a>
-                    <div
-                      class="dropdown-menu mt-0 py-3 px-2"
-                      aria-labelledby="dropdownSignUp"
-                    >
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/sign-up/sign-up-cover.html"
-                      >
-                        <span>Cover</span>
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/sign-up/sign-up-illustration.html"
-                      >
-                        <span>Illustration</span>
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/sign-up/sign-up-basic.html"
-                      >
-                        <span>Basic</span>
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/sign-up/sign-up-simple.html"
-                      >
-                        <span>Simple</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li
-                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
-                  >
-                    <a
-                      class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
-                      id="dropdownPasswordReset"
-                    >
-                      <span>Password Reset</span>
-                      <img
-                        src="./landing6_files/down-arrow.svg"
-                        alt="down-arrow"
-                        class="arrow ms-auto"
-                      />
-                    </a>
-                    <div
-                      class="dropdown-menu mt-0 py-3 px-2"
-                      aria-labelledby="dropdownPasswordReset"
-                    >
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/reset/reset-cover.html"
-                      >
-                        <span>Cover</span>
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/reset/reset-illustration.html"
-                      >
-                        <span>Illustration</span>
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/reset/reset-basic.html"
-                      >
-                        <span>Basic</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li
-                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
-                  >
-                    <a
-                      class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
-                      id="dropdownError"
-                    >
-                      <span>Error Pages</span>
-                      <img
-                        src="./landing6_files/down-arrow.svg"
-                        alt="down-arrow"
-                        class="arrow ms-auto"
-                      />
-                    </a>
-                    <div
-                      class="dropdown-menu mt-0 py-3 px-2"
-                      aria-labelledby="dropdownError"
-                    >
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/error-404.html"
-                      >
-                        <span>404</span>
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/pages/error-500.html"
-                      >
-                        <span>500</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li class="nav-item list-group-item border-0 p-0">
-                    <a
-                      href="https://demos.creative-tim.com/material-kit-pro/pages/coming-soon.html"
-                      class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
-                    >
-                      <span>Coming Soon</span>
-                    </a>
-                  </li>
-                  <li class="nav-item list-group-item border-0 p-0">
-                    <a
-                      href="https://demos.creative-tim.com/material-kit-pro/pages/2fa-security.html"
-                      class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1"
-                    >
-                      <span>2FA Security</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="row d-lg-none">
-                <div class="col-12 d-flex justify-content-center flex-column">
-                  <h6
-                    class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0"
-                  >
-                    Sign In
-                  </h6>
-                  <a
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/sign-in/sign-in-cover.html"
-                    class="dropdown-item border-radius-md"
-                  >
-                    Cover
-                  </a>
-                  <a
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/sign-in/sign-in-illustration.html"
-                    class="dropdown-item border-radius-md"
-                  >
-                    Illustration
-                  </a>
-                  <a
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/sign-in/sign-in-basic.html"
-                    class="dropdown-item border-radius-md"
-                  >
-                    Basic
-                  </a>
-                  <a
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/sign-in/sign-in-simple.html"
-                    class="dropdown-item border-radius-md"
-                  >
-                    Simple
-                  </a>
-                  <h6
-                    class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center mt-3 px-0"
-                  >
-                    Sign Up
-                  </h6>
-                  <a
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/sign-up/sign-up-cover.html"
-                    class="dropdown-item border-radius-md"
-                  >
-                    Cover
-                  </a>
-                  <a
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/sign-up/sign-up-illustration.html"
-                    class="dropdown-item border-radius-md"
-                  >
-                    Illustration
-                  </a>
-                  <a
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/sign-up/sign-up-basic.html"
-                    class="dropdown-item border-radius-md"
-                  >
-                    Basic
-                  </a>
-                  <a
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/sign-up/sign-up-simple.html"
-                    class="dropdown-item border-radius-md"
-                  >
-                    Simple
-                  </a>
-                  <h6
-                    class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center mt-3 px-0"
-                  >
-                    Password Reset
-                  </h6>
-                  <a
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/reset/reset-cover.html"
-                    class="dropdown-item border-radius-md"
-                  >
-                    Cover
-                  </a>
-                  <a
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/reset/reset-illustration.html"
-                    class="dropdown-item border-radius-md"
-                  >
-                    Illustration
-                  </a>
-                  <a
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/reset/reset-basic.html"
-                    class="dropdown-item border-radius-md"
-                  >
-                    Basic
-                  </a>
-                  <h6
-                    class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center mt-3 px-0"
-                  >
-                    Error Pages
-                  </h6>
-                  <a
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/error-404.html"
-                    class="dropdown-item border-radius-md"
-                  >
-                    404
-                  </a>
-                  <a
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/error-500.html"
-                    class="dropdown-item border-radius-md"
-                  >
-                    500
-                  </a>
-                  <hr class="horizontal dark" />
-                  <a
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/coming-soon.html"
-                    class="dropdown-item border-radius-md"
-                  >
-                    Coming Soon
-                  </a>
-                  <a
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/2fa-security.html"
-                    class="dropdown-item border-radius-md"
-                  >
-                    2FA Security
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
-            <a
-              class="nav-link ps-2 d-flex cursor-pointer align-items-center"
-              role="button"
-              id="dropdownMenuBlocks"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i class="material-icons opacity-6 me-2 text-md">view_day</i>
-              Sections
-              <img
-                src="./landing6_files/down-arrow-white.svg"
-                alt="down-arrow"
-                class="arrow ms-2 d-lg-block d-none"
-              />
-              <img
-                src="./landing6_files/down-arrow-dark.svg"
-                alt="down-arrow"
-                class="arrow d-lg-none d-block ms-auto"
-              />
-            </a>
-            <div
-              class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive p-3 border-radius-lg mt-0 mt-lg-3"
-              aria-labelledby="dropdownMenuBlocks"
-            >
-              <div class="d-none d-lg-block">
-                <ul class="list-group">
-                  <li
-                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
-                  >
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="https://demos.creative-tim.com/material-kit-pro/index.html"
-                    >
-                      <div class="d-flex">
-                        <div
-                          class="w-100 d-flex align-items-center justify-content-between"
-                        >
-                          <div>
-                            <h6
-                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                            >
-                              Page Sections
-                            </h6>
-                            <span class="text-sm">See all 109 sections</span>
-                          </div>
-                          <img
-                            src="./landing6_files/down-arrow.svg"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
-                        </div>
-                      </div>
-                    </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/hero-sections.html"
-                      >
-                        Page Headers
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/features.html"
-                      >
-                        Features
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/pricing.html"
-                      >
-                        Pricing
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/faq.html"
-                      >
-                        FAQ
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/blog-posts.html"
-                      >
-                        Blog Posts
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/testimonials.html"
-                      >
-                        Testimonials
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/teams.html"
-                      >
-                        Teams
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/stats.html"
-                      >
-                        Stats
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/call-to-actions.html"
-                      >
-                        Call to Actions
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/applications.html"
-                      >
-                        Applications
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/logo-areas.html"
-                      >
-                        Logo Areas
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/footers.html"
-                      >
-                        Footers
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/general-cards.html"
-                      >
-                        General Cards
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/content-sections.html"
-                      >
-                        Content Sections
-                      </a>
-                    </div>
-                  </li>
-                  <li
-                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
-                  >
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="https://demos.creative-tim.com/material-kit-pro/index.html"
-                    >
-                      <div class="d-flex">
-                        <div
-                          class="w-100 d-flex align-items-center justify-content-between"
-                        >
-                          <div>
-                            <h6
-                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                            >
-                              Navigation
-                            </h6>
-                            <span class="text-sm">See all 9 navigations</span>
-                          </div>
-                          <img
-                            src="./landing6_files/down-arrow.svg"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
-                        </div>
-                      </div>
-                    </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/navigation/navbars.html"
-                      >
-                        Navbars
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/navigation/nav-tabs.html"
-                      >
-                        Nav Tabs
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/navigation/pagination.html"
-                      >
-                        Pagination
-                      </a>
-                    </div>
-                  </li>
-                  <li
-                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
-                  >
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="https://demos.creative-tim.com/material-kit-pro/index.html"
-                    >
-                      <div class="d-flex">
-                        <div
-                          class="w-100 d-flex align-items-center justify-content-between"
-                        >
-                          <div>
-                            <h6
-                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                            >
-                              Input Areas
-                            </h6>
-                            <span class="text-sm">See all 19 input areas</span>
-                          </div>
-                          <img
-                            src="./landing6_files/down-arrow.svg"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
-                        </div>
-                      </div>
-                    </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/input-areas/newsletters.html"
-                      >
-                        Newsletter
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/input-areas/contact-sections.html"
-                      >
-                        Contact Sections
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/input-areas/inputs.html"
-                      >
-                        Inputs
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/input-areas/forms.html"
-                      >
-                        Forms
-                      </a>
-                    </div>
-                  </li>
-                  <li
-                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
-                  >
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="https://demos.creative-tim.com/material-kit-pro/index.html"
-                    >
-                      <div class="d-flex">
-                        <div
-                          class="w-100 d-flex align-items-center justify-content-between"
-                        >
-                          <div>
-                            <h6
-                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                            >
-                              Attention Catchers
-                            </h6>
-                            <span class="text-sm">See all 14 examples</span>
-                          </div>
-                          <img
-                            src="./landing6_files/down-arrow.svg"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
-                        </div>
-                      </div>
-                    </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/attention-catchers/alerts.html"
-                      >
-                        Alerts
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/attention-catchers/notifications.html"
-                      >
-                        Notifications
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/attention-catchers/modals.html"
-                      >
-                        Modals
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/attention-catchers/tooltips-popovers.html"
-                      >
-                        Tooltips &amp; Popovers
-                      </a>
-                    </div>
-                  </li>
-                  <li
-                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
-                  >
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="https://demos.creative-tim.com/material-kit-pro/index.html"
-                    >
-                      <div class="d-flex">
-                        <div
-                          class="w-100 d-flex align-items-center justify-content-between"
-                        >
-                          <div>
-                            <h6
-                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                            >
-                              Elements
-                            </h6>
-                            <span class="text-sm">See all 32 elements</span>
-                          </div>
-                          <img
-                            src="./landing6_files/down-arrow.svg"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
-                        </div>
-                      </div>
-                    </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/elements/avatars.html"
-                      >
-                        Avatars
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/elements/badges.html"
-                      >
-                        Badges
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/elements/breadcrumbs.html"
-                      >
-                        Breadcrumbs
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/elements/buttons.html"
-                      >
-                        Buttons
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/elements/button-groups.html"
-                      >
-                        Button Groups
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/elements/dropdowns.html"
-                      >
-                        Dropdowns
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/elements/progress-bars.html"
-                      >
-                        Progress Bars
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/elements/social-buttons.html"
-                      >
-                        Social Buttons
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/elements/tables.html"
-                      >
-                        Tables
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/elements/toggles.html"
-                      >
-                        Toggles
-                      </a>
-                      <a
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        href="https://demos.creative-tim.com/material-kit-pro/sections/elements/typography.html"
-                      >
-                        Typography
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="row d-lg-none">
-                <div class="col-md-12">
-                  <div class="d-flex mb-2">
-                    <div
-                      class="w-100 d-flex align-items-center justify-content-between"
-                    >
-                      <div>
-                        <h6
-                          class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                        >
-                          Page Sections
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/hero-sections.html"
-                  >
-                    Page Headers
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/features.html"
-                  >
-                    Features
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/pricing.html"
-                  >
-                    Pricing
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/faq.html"
-                  >
-                    FAQ
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/blog-posts.html"
-                  >
-                    Blog Posts
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/testimonials.html"
-                  >
-                    Testimonials
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/teams.html"
-                  >
-                    Teams
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/stats.html"
-                  >
-                    Stats
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/call-to-actions.html"
-                  >
-                    Call to Actions
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/applications.html"
-                  >
-                    Applications
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/logo-areas.html"
-                  >
-                    Logo Areas
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/footers.html"
-                  >
-                    Footers
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/general-cards.html"
-                  >
-                    General Cards
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/page-sections/content-sections.html"
-                  >
-                    Content Sections
-                  </a>
-                  <div class="d-flex mb-2 mt-3">
-                    <div
-                      class="w-100 d-flex align-items-center justify-content-between"
-                    >
-                      <div>
-                        <h6
-                          class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                        >
-                          Navigation
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/navigation/navbars.html"
-                  >
-                    Navbars
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/navigation/nav-tabs.html"
-                  >
-                    Nav Tabs
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/navigation/pagination.html"
-                  >
-                    Pagination
-                  </a>
-                  <div class="d-flex mb-2 mt-3">
-                    <div
-                      class="w-100 d-flex align-items-center justify-content-between"
-                    >
-                      <div>
-                        <h6
-                          class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                        >
-                          Input Areas
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/input-areas/newsletters.html"
-                  >
-                    Newsletter
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/input-areas/contact-sections.html"
-                  >
-                    Contact Sections
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/input-areas/inputs.html"
-                  >
-                    Inputs
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/input-areas/forms.html"
-                  >
-                    Forms
-                  </a>
-                  <div class="d-flex mb-2 mt-3">
-                    <div
-                      class="w-100 d-flex align-items-center justify-content-between"
-                    >
-                      <div>
-                        <h6
-                          class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                        >
-                          Attention Catchers
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/attention-catchers/alerts.html"
-                  >
-                    Alerts
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/attention-catchers/notifications.html"
-                  >
-                    Notifications
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/attention-catchers/modals.html"
-                  >
-                    Modals
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/attention-catchers/tooltips-popovers.html"
-                  >
-                    Tooltips &amp; Popovers
-                  </a>
-                  <div class="d-flex mb-2 mt-3">
-                    <div
-                      class="w-100 d-flex align-items-center justify-content-between"
-                    >
-                      <div>
-                        <h6
-                          class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                        >
-                          Elements
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/elements/avatars.html"
-                  >
-                    Avatars
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/elements/badges.html"
-                  >
-                    Badges
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/elements/breadcrumbs.html"
-                  >
-                    Breadcrumbs
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/elements/buttons.html"
-                  >
-                    Buttons
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/elements/button-groups.html"
-                  >
-                    Button Groups
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/elements/dropdowns.html"
-                  >
-                    Dropdowns
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/elements/progress-bars.html"
-                  >
-                    Progress Bars
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/elements/social-buttons.html"
-                  >
-                    Social Buttons
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/elements/tables.html"
-                  >
-                    Tables
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/elements/toggles.html"
-                  >
-                    Toggles
-                  </a>
-                  <a
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    href="https://demos.creative-tim.com/material-kit-pro/sections/elements/typography.html"
-                  >
-                    Typography
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
-            <a
-              class="nav-link ps-2 d-flex cursor-pointer align-items-center"
-              role="button"
-              id="dropdownMenuDocs"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i class="material-icons opacity-6 me-2 text-md">article</i>
-              Docs
-              <img
-                src="./landing6_files/down-arrow-white.svg"
-                alt="down-arrow"
-                class="arrow ms-2 d-lg-block d-none"
-              />
-              <img
-                src="./landing6_files/down-arrow-dark.svg"
-                alt="down-arrow"
-                class="arrow d-lg-none d-block ms-auto"
-              />
-            </a>
-            <div
-              class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md mt-0 mt-lg-3 p-3 border-radius-lg"
-              aria-labelledby="dropdownMenuDocs"
-            >
-              <div class="d-none d-lg-block">
-                <ul class="list-group">
-                  <li class="nav-item list-group-item border-0 p-0">
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-kit"
-                    >
-                      <h6
-                        class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                      >
-                        Getting Started
-                      </h6>
-                      <span class="text-sm"
-                        >All about overview, quick start, license and
-                        contents</span
-                      >
-                    </a>
-                  </li>
-                  <li class="nav-item list-group-item border-0 p-0">
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="https://www.creative-tim.com/learning-lab/bootstrap/colors/material-kit"
-                    >
-                      <h6
-                        class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                      >
-                        Foundation
-                      </h6>
-                      <span class="text-sm"
-                        >See our colors, icons and typography</span
-                      >
-                    </a>
-                  </li>
-                  <li class="nav-item list-group-item border-0 p-0">
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="https://www.creative-tim.com/learning-lab/bootstrap/alerts/material-kit"
-                    >
-                      <h6
-                        class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                      >
-                        Components
-                      </h6>
-                      <span class="text-sm"
-                        >Explore our collection of fully designed
-                        components</span
-                      >
-                    </a>
-                  </li>
-                  <li class="nav-item list-group-item border-0 p-0">
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="https://www.creative-tim.com/learning-lab/bootstrap/datepicker/material-kit"
-                    >
-                      <h6
-                        class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                      >
-                        Plugins
-                      </h6>
-                      <span class="text-sm"
-                        >Check how you can integrate our plugins</span
-                      >
-                    </a>
-                  </li>
-                  <li class="nav-item list-group-item border-0 p-0">
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="https://www.creative-tim.com/learning-lab/bootstrap/utilities/material-kit"
-                    >
-                      <h6
-                        class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                      >
-                        Utility Classes
-                      </h6>
-                      <span class="text-sm"
-                        >For those who want flexibility, use our utility
-                        classes</span
-                      >
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="row d-lg-none">
-                <div class="col-md-12 g-0">
-                  <a
-                    class="dropdown-item py-2 ps-3 border-radius-md"
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/about-us.html"
-                  >
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                    >
-                      Getting Started
-                    </h6>
-                    <span class="text-sm"
-                      >All about overview, quick start, license and
-                      contents</span
-                    >
-                  </a>
-                  <a
-                    class="dropdown-item py-2 ps-3 border-radius-md"
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/about-us.html"
-                  >
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                    >
-                      Foundation
-                    </h6>
-                    <span class="text-sm"
-                      >See our colors, icons and typography</span
-                    >
-                  </a>
-                  <a
-                    class="dropdown-item py-2 ps-3 border-radius-md"
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/about-us.html"
-                  >
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                    >
-                      Components
-                    </h6>
-                    <span class="text-sm"
-                      >Explore our collection of fully designed components</span
-                    >
-                  </a>
-                  <a
-                    class="dropdown-item py-2 ps-3 border-radius-md"
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/about-us.html"
-                  >
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                    >
-                      Plugins
-                    </h6>
-                    <span class="text-sm"
-                      >Check how you can integrate our plugins</span
-                    >
-                  </a>
-                  <a
-                    class="dropdown-item py-2 ps-3 border-radius-md"
-                    href="https://demos.creative-tim.com/material-kit-pro/pages/about-us.html"
-                  >
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                    >
-                      Utility Classes
-                    </h6>
-                    <span class="text-sm"
-                      >For those who want flexibility, use our utility
-                      classes</span
-                    >
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <ul class="navbar-nav d-lg-block d-none">
-          <li class="nav-item">
-            <a
-              href="https://www.creative-tim.com/product/material-design-system-pro#pricingCard"
-              class="btn btn-sm bg-gradient-primary mb-0 me-1"
-              >Buy Now</a
-            >
-          </li>
-        </ul>
-      </div>
+<body>
+    <div id="container">
+        <div id="map">
+            <div class="location" data-image="image1.jpg" style="top: 50px; left: 100px;"></div>
+            <div class="location" data-image="image2.jpg" style="top: 150px; left: 200px;"></div>
+            <div class="location" data-image="image3.jpg" style="top: 250px; left: 300px;"></div>
+        </div>
+        <div id="image-display">
+            <img src="" alt="Click a location on the map" id="displayed-image">
+        </div>
     </div>
-  </nav>
-
-  <header>
-    <div
-      class="page-header min-vh-75 bg-gradient-dark" /*frontFullView*/
-      style="background-image: url('{{ ASSETS_ROOT }}/img/gulmoharFront2.jpg')" 
-      loading="lazy"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 col-12 my-auto">
-            <div class="brand">
-              <h1 class="text-white mb-0">The Gulmohar</h1>
-              <p class="text-white opacity-8">
-                Stay that will make you feel like home.
-              
-              </p>
-              <button class="btn btn-white mt-4" type="button" name="button">
-                Check more
-              </button>
-            </div>
-          </div>
-        
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
-    <!-- -------- START Features w/ 4 infos - just colored icons -------- -->
-<section class="py-4" style="padding-bottem: 1px" >
-  <div class="container" >
-    <div class="row">
-        <div class="text-center border-radius-lg" style="padding-bottom: 50px">
-          <h2>Our Facilities</h2>
-          
-        </div>
-      
-    </div>
-    <div class="row text-center">
-      <div class="col-lg-3 col-md-6">
-        <div class="info">
-          <i class="material-icons text-gradient text-info text-3xl">grid_view</i>
-          <h5 class="mt-3">Free Wifi</h5>
-          <p>We get insulted by others, lose trust for those We get back.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="info">
-          <i class="material-icons text-gradient text-info text-3xl">forum</i>
-          <h5 class="mt-3">24/7 Help</h5>
-          <p>We get insulted by others, lose trust for those We get back.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="info">
-          <i class="material-icons text-gradient text-info text-3xl">brush</i>
-          <h5 class="mt-3">Homemade Food and Free Breakfast</h5>
-          <p>We get insulted by others, lose trust for those We get back.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="info">
-          <i class="material-icons text-gradient text-info text-3xl">account_balance</i>
-          <h5 class="mt-3">Tranquil Environment</h5>
-          <p>We get insulted by others, lose trust for those We get back.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> 
-<!-- -------- END Features w/ 4 infos - just colored icons -------- -->
-
-    {% comment %} <section class="pb-7 pt-6">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-5 col-md-8 col-12 text-start">
-            <div class="text-start border-radius-lg">
-              <h2>Our Facilities</h2>
-              <p class="mb-4">
-                <span class="font-weight-bold">The time</span>
-                is now for it to be okay to be great. People in this world shun
-                people for being great. For being a bright color. Contact us at
-                <a href="javascript:;" class="text-info font-weight-normal"
-                  >contact@material-design.com</a
-                >.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 py-md-5 py-3">
-            <div class="p-3 ps-0 text-center">
-              <div
-                class="icon icon-lg icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl mt-n4"
-              >
-                <i class="material-icons opacity-10">speed</i>
-              </div>
-              <h5 class="mt-4">Fast</h5>
-              <p>
-                Creativity starts with an empty calendar and ends with a full
-                one.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 py-md-5 py-3">
-            <div class="p-3 text-center">
-              <div
-                class="icon icon-lg icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl mt-n4"
-              >
-                <i class="material-icons opacity-10">devices</i>
-              </div>
-              <h5 class="mt-4">Responsive</h5>
-              <p>
-                We get insulted by others, lose trust for those We get back.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 py-md-5 py-3">
-            <div class="p-3 text-center">
-              <div
-                class="icon icon-lg icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl mt-n4"
-              >
-                <i class="material-icons opacity-10">social_distance</i>
-              </div>
-              <h5 class="mt-4">Unified</h5>
-              <p>
-                When playing, surround yourself with people happier than you.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> {% endcomment %}
-
-    <!-- -------   START CONTENT 1 - title & description and 6 IMAGES   -------- -->
-    <section class="py-4" style="padding-top: 1px">
-      <div class="container"  style="padding-top: 1px">
-        <div class="row">
-          <div class="col-8 mx-auto text-center mb-5">
-            <span class="badge badge-primary mb-2">Co-working</span>
-            <h2>Spacious and airy rooms</h2>
-            <p>
-              If you can’t decide, the answer is no. If two equally difficult
-              paths, choose the one more painful in the short term (pain
-              avoidance is creating an illusion of equality).
-            </p>
-          </div>
-        </div>
-        <div class="row min-vh-25">
-          <div class="col-sm-4 col-5 mb-sm-0 mb-3">
-            <div
-              style="background-image: url('{{ ASSETS_ROOT }}/img/rooms/bedroom2.jpg')"
-              class="w-100 h-100 border-radius-lg shadow bg-cover"
-            ></div>
-          </div>
-          <div class="col-sm-3 col-7 mb-sm-0 mb-3">
-            <div
-              style="
-              background-image: url('{{ ASSETS_ROOT }}/img/rooms/coffeset.png')" 
-              
-              class="w-100 h-100 border-radius-lg bg-cover"
-            ></div>
-          </div>
-          <div class="col-sm-5 mb-sm-0 mb-3">
-            <div
-              style="
-                background-image: url('{{ ASSETS_ROOT }}/img/rooms/beadroom1.1.jpg')"
-              
-              class="w-100 h-100 border-radius-lg shadow bg-cover"
-            ></div>
-          </div>
-        </div>
-        <div class="row min-vh-25 mt-4">
-          <div class="col-sm-3 col-7 mb-sm-0 mb-3">
-            <div
-              style=
-                "background-image: url('{{ ASSETS_ROOT }}/img/rooms/LivingRoom.jpg')" /*4*/
-              
-              class="w-100 h-100 border-radius-lg shadow bg-cover"
-            ></div>
-          </div>
-          <div class="col-sm-5 col-5 mb-sm-0 mb-3">
-            <div
-              style=
-                "background-image: url('{{ ASSETS_ROOT }}/img/outside/sideGulmohar.jpg')"
-              
-              class="w-100 h-100 border-radius-lg shadow bg-cover"
-            ></div>
-          </div>
-          <div class="col-sm-4 mb-sm-0 mb-3">
-            <div
-              style=
-                "background-image: url('{{ ASSETS_ROOT }}/img/outside/sideGulmohar.jpg')"
-              
-              class="w-100 h-100 border-radius-lg shadow bg-cover"
-            ></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- -------   END CONTENT 1 - title & description and 6 IMAGES   -------- -->
-
-    <!-- -------   project -->
-
-    <section class="py-5">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-lg-8 text-center mx-auto">
-            <p class="mb-1 text-success text-uppercase font-weight-bold">Our Work</p>
-            <h3>Some of our awesome projects - 1</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 position-relative">
-            <img class="image-left border-radius-lg img-fluid shadow position-relative top-0 end-0 ms-md-5 bg-cover" src="{% static 'assets/img/rooms/bedroom2.jpg' %}">
     
-            <p class="blockquote border border-success rounded w-50 p-3 text-sm text-success float-md-end mx-auto mt-4 me-md-n2">"Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very
-              slightly"
-              <br>
-              <br>
-              <small>-NOAA</small>
-            </p>
     
           </div>
           <div class="col-md-5">
@@ -2594,18 +724,673 @@
           <div class="text-center">
             <p class="text-dark my-4 text-sm font-weight-normal">
               All rights reserved. Copyright ©
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              2023 Material Kit by
-              <a href="https://www.creative-tim.com/" target="_blank"
-                >Creative Tim</a
-              >.
+
+          </div>
+          <div class="col-md-5">
+            <!-- First image on the right side, above the article -->                              
+            <img class="image-right border-radius-lg img-fluid shadow ms-md-n4 mb-4 mt-md-8 position-relative bg-cover" src="{% static 'assets/img/rooms/livingroom2.jpg' %}">
+            <div class="px-4">
+              <p class="text-gradient text-success">Design</p>
+              <h3 class="mb-4">Jeff Bezos</h3>
+              <p>
+                For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6 position-relative">
+            <img class="image-left border-radius-lg img-fluid shadow position-relative top-0 end-0 ms-md-5 bg-cover" src="{% static 'assets/img/bg5.jpg' %}">
+            <p class="blockquote border border-primary rounded w-50 p-3 text-sm text-primary float-md-end mt-4 me-md-n2 mx-auto">"Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very
+              slightly"
+              <br>
+              <br>
+              <small>-NOAA</small>
             </p>
+    
+          </div>
+          <div class="col-md-5">
+            <!-- First image on the right side, above the article -->
+            <img class="image-right border-radius-lg img-fluid shadow ms-md-n4 mb-4 mt-md-8 position-relative bg-cover" src="{% static 'assets/img/bg5.jpg' %}">
+            <div class="px-4">
+              <p class="text-gradient text-primary">Development</p>
+              <h3 class="mb-4">Mike Alfonso</h3>
+              <p>
+                For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
+<!-- -------   project end -->
+
+    <section class="py-lg-7 py-5" style:"padding-top: 1px">
+      <div class="bg-gradient-primary position-relative mx-n3 overflow-hidden">
+        <img
+          src="./landing6_files/pattern-lines.svg"
+          alt="pattern-lines"
+          class="position-absolute start-0 top-md-0 w-100 opacity-6"
+        />
+        <div class="container pb-lg-9 pb-7 pt-7 postion-relative z-index-2">
+          <div class="row">
+            <div class="col-md-8 mx-auto text-center">
+              <span class="badge bg-gradient-dark mb-2">Pricing</span>
+              <h3 class="text-white">See our pricing</h3>
+              <p class="text-white">
+                You have Free Unlimited Updates and Premium Support on each
+                package.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-lg-n8 mt-n7">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 mb-lg-auto mb-4 my-auto p-md-0 ms-auto">
+              <div
+                class="card border-radius-top-end-lg-0 border-radius-bottom-end-lg-0"
+              >
+                <div class="card-header text-center pt-4 pb-3">
+                  <h6 class="text-dark opacity-8 mb-0">Starter</h6>
+                  <h1 class="font-weight-bolder"><small>$</small>199</h1>
+                </div>
+                <div class="card-body mx-auto pt-0">
+                  <div class="justify-content-start d-flex px-2 py-1">
+                    <div>
+                      <i
+                        class="fas fa-check text-dark opacity-6 text-sm"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="ps-2">
+                      <span class="text-sm">Complete documentation</span>
+                    </div>
+                  </div>
+                  <div class="justify-content-start d-flex px-2 py-1">
+                    <div>
+                      <i
+                        class="fas fa-check text-dark opacity-6 text-sm"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="ps-2">
+                      <span class="text-sm">Working materials in Sketch</span>
+                    </div>
+                  </div>
+                  <div class="justify-content-start d-flex px-2 py-1">
+                    <div>
+                      <i
+                        class="fas fa-check text-dark opacity-6 text-sm"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="ps-2">
+                      <span class="text-sm">500MB cloud storage</span>
+                    </div>
+                  </div>
+                  <div class="justify-content-start d-flex px-2 py-1">
+                    <div>
+                      <i
+                        class="fas fa-check text-dark opacity-6 text-sm"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="ps-2">
+                      <span class="text-sm">Lite support</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer pt-0">
+                  <a
+                    href="javascript:;"
+                    class="btn w-100 bg-gradient-dark mb-0"
+                  >
+                    Buy now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 p-md-0 mb-lg-auto mb-4 z-index-2">
+              <div class="card">
+                <div class="card-header text-center pt-4 pb-3">
+                  <h6 class="text-dark opacity-8 text mb-0 mt-2">Pro</h6>
+                  <h1 class="font-weight-bolder"><small>$</small>299</h1>
+                </div>
+                <div class="card-body mx-auto pt-0">
+                  <div class="justify-content-start d-flex px-2 py-1">
+                    <div>
+                      <i
+                        class="fas fa-check text-dark opacity-6 text-sm"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="ps-2">
+                      <span class="text-sm">Complete documentation</span>
+                    </div>
+                  </div>
+                  <div class="justify-content-start d-flex px-2 py-1">
+                    <div>
+                      <i
+                        class="fas fa-check text-dark opacity-6 text-sm"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="ps-2">
+                      <span class="text-sm">Working materials in Sketch</span>
+                    </div>
+                  </div>
+                  <div class="justify-content-start d-flex px-2 py-1">
+                    <div>
+                      <i
+                        class="fas fa-check text-dark opacity-6 text-sm"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="ps-2">
+                      <span class="text-sm">100GB cloud storage</span>
+                    </div>
+                  </div>
+                  <div class="justify-content-start d-flex px-2 py-1">
+                    <div>
+                      <i
+                        class="fas fa-check text-dark opacity-6 text-sm"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="ps-2">
+                      <span class="text-sm">500 team members</span>
+                    </div>
+                  </div>
+                  <div class="justify-content-start d-flex px-2 py-1">
+                    <div>
+                      <i
+                        class="fas fa-check text-dark opacity-6 text-sm"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="ps-2">
+                      <span class="text-sm">Premium support</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer pt-0">
+                  <a
+                    href="javascript:;"
+                    class="btn btn-icon bg-gradient-primary d-block mb-0 icon-move-right"
+                    >Try Pro
+                    <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-lg-auto mb-4 my-auto p-md-0 me-auto">
+              <div
+                class="card border-radius-top-start-lg-0 border-radius-bottom-start-lg-0"
+              >
+                <div class="card-header text-center pt-4 pb-2">
+                  <h6 class="text-dark opacity-8 text mb-0">Premium</h6>
+                  <h1 class="font-weight-bolder"><small>$</small>399</h1>
+                </div>
+                <div class="card-body mx-auto pt-0">
+                  <div class="justify-content-start d-flex px-2 py-1 py-1">
+                    <div>
+                      <i
+                        class="fas fa-check text-dark opacity-6 text-sm"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="ps-2">
+                      <span class="text-sm">Complete documentation</span>
+                    </div>
+                  </div>
+                  <div class="justify-content-start d-flex px-2 py-1 py-1">
+                    <div>
+                      <i
+                        class="fas fa-check text-dark opacity-6 text-sm"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="ps-2">
+                      <span class="text-sm">Working materials in Sketch</span>
+                    </div>
+                  </div>
+                  <div class="justify-content-start d-flex px-2 py-1 py-1">
+                    <div>
+                      <i
+                        class="fas fa-check text-dark opacity-6 text-sm"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="ps-2">
+                      <span class="text-sm">2GB cloud storage</span>
+                    </div>
+                  </div>
+                  <div class="justify-content-start d-flex px-2 py-1">
+                    <div>
+                      <i
+                        class="fas fa-check text-dark opacity-6 text-sm"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="ps-2">
+                      <span class="text-sm">Premium support</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer pt-0">
+                  <a href="javascript:;" class="btn w-100 bg-gradient-dark mb-0"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-lg-7 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto text-center">
+            <h2 class="mb-3">Think about us</h2>
+            <p>
+              That’s the main thing people are controlled by! Thoughts- their
+              perception of themselves!
+            </p>
+          </div>
+        </div>
+        <div class="row mt-6">
+          <div class="col-lg-4 col-md-8">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <img
+                  src="./landing6_files/team-3.jpg"
+                  alt="..."
+                  class="avatar avatar-lg border-radius-lg shadow mt-n5"
+                />
+                <div class="author">
+                  <div class="name">
+                    <span>Mathew Glock</span>
+                    <div class="stats">
+                      <small
+                        ><i class="far fa-clock" aria-hidden="true"></i> 5 min
+                        read</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-4">
+                  "If you have the opportunity to play this game of life you
+                  need to appreciate every moment."
+                </p>
+                <div class="rating mt-3">
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="far fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-8 ms-md-auto">
+            <div class="card bg-gradient-primary mb-5 mb-lg-0">
+              <div class="card-body">
+                <img
+                  src="./landing6_files/marie.jpg"
+                  alt="..."
+                  class="avatar avatar-lg border-radius-lg shadow mt-n5"
+                />
+                <div class="author align-items-center">
+                  <div class="name">
+                    <span class="text-white">Mathew Glock</span>
+                    <div class="stats">
+                      <small class="text-white">Posted on 28 February</small>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-4 text-white">
+                  "If you have the opportunity to play this game of life you
+                  need to appreciate every moment."
+                </p>
+                <div class="rating mt-3">
+                  <i class="fas fa-star text-white" aria-hidden="true"></i>
+                  <i class="fas fa-star text-white" aria-hidden="true"></i>
+                  <i class="fas fa-star text-white" aria-hidden="true"></i>
+                  <i class="far fa-star text-white" aria-hidden="true"></i>
+                  <i class="far fa-star text-white" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-8">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <img
+                  src="./landing6_files/team-2.jpg"
+                  alt="..."
+                  class="avatar avatar-lg border-radius-lg shadow mt-n5"
+                />
+                <div class="author">
+                  <div class="name">
+                    <span>Mathew Glock</span>
+                    <div class="stats">
+                      <small
+                        ><i class="far fa-clock" aria-hidden="true"></i> 5 min
+                        read</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-4">
+                  "If you have the opportunity to play this game of life you
+                  need to appreciate every moment."
+                </p>
+                <div class="rating mt-3">
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="horizontal dark my-5" />
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-6">
+            <img
+              class="w-100 opacity-6"
+              src="./landing6_files/logo-apple.svg"
+              alt="Logo"
+            />
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <img
+              class="w-100 opacity-6"
+              src="./landing6_files/logo-facebook.svg"
+              alt="Logo"
+            />
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <img
+              class="w-100 opacity-6"
+              src="./landing6_files/logo-behance.svg"
+              alt="Logo"
+            />
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <img
+              class="w-100 opacity-6"
+              src="./landing6_files/logo-spotify.svg"
+              alt="Logo"
+            />
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <img
+              class="w-100 opacity-6"
+              src="./landing6_files/logo-coinbase.svg"
+              alt="Logo"
+            />
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <img
+              class="w-100 opacity-6"
+              src="./landing6_files/logo-pinterest.svg"
+              alt="Logo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="footer pt-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-4 ms-auto">
+          <div>
+            <a href="https://www.creative-tim.com/product/material-kit-pro">
+              <img
+                src="./landing6_files/logo-ct-dark.png"
+                class="mb-3 footer-logo"
+                alt="main_logo"
+              />
+            </a>
+            <h6 class="font-weight-bolder mb-4">Material Kit 2 PRO</h6>
+          </div>
+          <div>
+            <ul class="d-flex flex-row ms-n3 nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link pe-1"
+                  href="https://www.facebook.com/CreativeTim/"
+                  target="_blank"
+                >
+                  <i
+                    class="fab fa-facebook text-lg opacity-8"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link pe-1"
+                  href="https://twitter.com/creativetim"
+                  target="_blank"
+                >
+                  <i
+                    class="fab fa-twitter text-lg opacity-8"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link pe-1"
+                  href="https://dribbble.com/creativetim"
+                  target="_blank"
+                >
+                  <i
+                    class="fab fa-dribbble text-lg opacity-8"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link pe-1"
+                  href="https://github.com/creativetimofficial"
+                  target="_blank"
+                >
+                  <i
+                    class="fab fa-github text-lg opacity-8"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link pe-1"
+                  href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w"
+                  target="_blank"
+                >
+                  <i
+                    class="fab fa-youtube text-lg opacity-8"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+          <div>
+            <h6 class="text-sm">Company</h6>
+            <ul class="flex-column ms-n3 nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.creative-tim.com/presentation"
+                  target="_blank"
+                >
+                  About Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.creative-tim.com/templates/free"
+                  target="_blank"
+                >
+                  Freebies
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.creative-tim.com/templates/premium"
+                  target="_blank"
+                >
+                  Premium Tools
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.creative-tim.com/blog"
+                  target="_blank"
+                >
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+          <div>
+            <h6 class="text-sm">Resources</h6>
+            <ul class="flex-column ms-n3 nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://iradesign.io/"
+                  target="_blank"
+                >
+                  Illustrations
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.creative-tim.com/bits"
+                  target="_blank"
+                >
+                  Bits &amp; Snippets
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.creative-tim.com/affiliates/new"
+                  target="_blank"
+                >
+                  Affiliate Program
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+          <div>
+            <h6 class="text-sm">Help &amp; Support</h6>
+            <ul class="flex-column ms-n3 nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.creative-tim.com/contact-us"
+                  target="_blank"
+                >
+                  Contact Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.creative-tim.com/knowledge-center"
+                  target="_blank"
+                >
+                  Knowledge Center
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://services.creative-tim.com/?ref=ct-material-kit-pro-footer"
+                  target="_blank"
+                >
+                  Custom Development
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.creative-tim.com/sponsorships"
+                  target="_blank"
+                >
+                  Sponsorships
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
+          <div>
+            <h6 class="text-sm">Legal</h6>
+            <ul class="flex-column ms-n3 nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.creative-tim.com/knowledge-center/terms-of-service/"
+                  target="_blank"
+                >
+                  Terms &amp; Conditions
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.creative-tim.com/knowledge-center/privacy-policy/"
+                  target="_blank"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.creative-tim.com/license"
+                  target="_blank"
+                >
+                  Licenses (EULA)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="text-center">
+            <p class="text-dark my-4 text-sm font-weight-normal">
+              All rights reserved. Copyright ©
+    <script>
+        document.querySelectorAll('.location').forEach(location => {
+            location.addEventListener('click', function() {
+                const imagePath = this.getAttribute('data-image');
+                document.getElementById('displayed-image').src = imagePath;
+            });
+        });
+    </script>
+</body>
 </html>
-{% endblock content %}

@@ -1,0 +1,157 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %} 
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="{% static 'assets/css/booking.css' %}" />
+  </head>
+  <body>
+    {%load app_tags%}
+     <div class="col-lg-30 mx-auto">
+    <div class="col-lg-2">
+      <label for="">Check in</label>
+      <input class="form-control mr-sm-2" type="date" placeholder="Check in" name="cin" min={%todays_date%} max={% max_date %} aria-label="Search" required="True">
+  </div>
+  <div class="col-lg-2">
+      <label for="">Check Out</label>
+      <input class="form-control mr-sm-2" type="date" placeholder="Check out" name="cout" min={%tommorow%} max={% max_date%} aria-label="Search" required="True">
+  </div>
+  <div class="col-lg-2">
+      <label for="">Person</label>
+      <input class="form-control mr-sm-2" type="number" placeholder="Person" name="capacity" aria-label="Search" required="True">
+  </div>
+  <div class="col-lg-2">
+
+      <input type="submit" value="Check Availabilty" class="form-control mr-sm-2 btn btn-primary my-4" style="position: relative;top: 7px;">
+  </div>
+</div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-50 mx-auto">
+          <h2>Book a Room</h2>
+          <form method="get" action="book">
+            <div class="form-group row">
+              <label for="checkin" class="col-sm-2 col-form-label">Check-in:</label>
+              <div class="col-sm-2">
+                <input
+                  type="date"
+                  class="form-control"
+                  id="checkin"
+                  name="checkin"
+                  required
+                />
+              </div>
+              <label for="checkout" class="col-sm-2 col-form-label">Check-out:</label>
+              <div class="col-sm-4">
+                <input
+                  type="date"
+                  class="form-control"
+                  id="checkout"
+                  name="checkout"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="total_guests" class="col-sm-2 col-form-label">Total Guests:</label>
+              <div class="col-sm-4">
+                <div class="input-group">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="adults"
+                    name="adults"
+                    min="1"
+                    required
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">
+                      <i class="fa fa-user"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="input-group">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="children"
+                    name="children"
+                    min="0"
+                    required
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">
+                      <i class="fa fa-child"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Book a Room</h2>
+          <form method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+              <label for="room_number" class="form-label">Room Number</label>
+              <input
+                type="text"
+                class="form-control"
+                id="room_number"
+                name="room_number"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="start_date" class="form-label">Start Date</label>
+              <input
+                type="date"
+                class="form-control"
+                id="start_date"
+                name="start_date"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="end_date" class="form-label">End Date</label>
+              <input
+                type="date"
+                class="form-control"
+                id="end_date"
+                name="end_date"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="customer" class="form-label">Customer</label>
+              <select class="form-control" id="customer" name="customer">
+                {% for customer in customers %}
+                <option value="{{ customer.id }}">
+                  {{ customer.user.username }}
+                </option>
+                {% empty %}
+                <option value="">No customers found.</option>
+                {% endfor %}
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Book</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+{% endblock %}

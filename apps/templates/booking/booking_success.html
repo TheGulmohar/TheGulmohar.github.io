@@ -1,0 +1,14 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+      <h2>Booking Successful</h2>
+      <p>Your booking for room {{ room_number }} from {{ start_date }} to {{ end_date }} has been successfully created.</p>
+      <p>Thank you for choosing our hotel.</p>
+      <a href="{% url 'home' %}" class="btn btn-primary">Go Back to Home</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,5 +1,8 @@
 
 import os, environ
+import mimetypes
+
+mimetypes.add_type("text/javascript", ".js", True)
 
 env = environ.Env(
     # set casting, default value
@@ -41,10 +44,14 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'livereload',
     'django.contrib.staticfiles',
     'apps.home',  # Enable the inner home (home)
+    'apps.gulmohar',
+    'apps.booking',
     #'livereload' # not needed in production
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -55,6 +62,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'livereload.middleware.LiveReloadScript',
 ]
 
 ROOT_URLCONF = 'core.urls'
