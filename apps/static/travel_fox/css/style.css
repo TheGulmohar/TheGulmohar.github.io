@@ -9,7 +9,7 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: none;
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
 }
@@ -26,11 +26,11 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background: #e2e2e2;
+  background: #e1e1e1;
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #d9296f;
+  background: #ca4528;
 }
 
 body {
@@ -48,7 +48,7 @@ section {
 }
 
 .heading span {
-  color: #d9296f;
+  color: #ca4528;
   font-size: 2rem;
 }
 
@@ -62,15 +62,15 @@ section {
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.7rem;
-  color: #d9296f;
-  border: 0.2rem solid #d9296f;
+  color: #ca4528;
+  border: 0.2rem solid #ca4528;
   border-radius: 5rem;
   cursor: pointer;
   background: none;
 }
 
 .btn:hover {
-  background: #d9296f;
+  background: #ca4528;
   color: #f8f9fc;
 }
 
@@ -102,7 +102,7 @@ section {
 }
 
 .header .navbar a:hover {
-  color: #d9296f;
+  color: #ca4528;
 }
 
 .header .btn {
@@ -116,7 +116,7 @@ section {
 }
 
 .logo span {
-  color: #d9296f;
+  color: #ca4528;
 }
 
 #menu-btn {
@@ -127,6 +127,29 @@ section {
 }
 
 .home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../images/gulmoharFront2.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),  url(../images/gulmoharFront2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.cafe {
   margin: 0 auto;
   margin-top: 9rem;
   width: 90%;
@@ -213,10 +236,10 @@ section {
   width: 100%;
   padding: 1.2rem 1.4rem;
   border-radius: 5rem;
-  border: 0.2rem solid #d9296f;
+  border: 0.2rem solid #ca4528;
   font-size: 1.6rem;
   color: #3d3d3d;
-  text-transform: capitalize;
+  text-transform: none;
   background: none;
   margin-top: 1rem;
 }
@@ -267,7 +290,7 @@ section {
 }
 
 .about .video-container .controls span:hover {
-  background: #d9296f;
+  background: #ca4528;
 }
 
 .about .content {
@@ -278,7 +301,7 @@ section {
 }
 
 .about .content span {
-  color: #d9296f;
+  color: #ca4528;
   font-size: 2rem;
 }
 
@@ -318,7 +341,7 @@ section {
 
 .services .box-container .box i {
   font-size: 4rem;
-  color: #d9296f;
+  color: #ca4528;
   margin-bottom: 2rem;
 }
 
@@ -386,7 +409,7 @@ section {
 
 .destination .box-container .box .content a {
   font-size: 1.7rem;
-  color: #d9296f;
+  color: #ca4528;
 }
 
 .destination .box-container .box .content a:hover i {
@@ -451,7 +474,7 @@ section {
 
 .review .content span {
   font-size: 2rem;
-  color: #d9296f;
+  color: #ca4528;
 }
 
 .review .content h3 {
@@ -489,7 +512,7 @@ section {
 }
 
 .review .box-container .box:hover {
-  border: 0.2rem solid #d9296f;
+  border: 0.2rem solid #ca4528;
 }
 
 .review .box-container .box p {
@@ -539,7 +562,7 @@ section {
 
 .banner .content span {
   font-size: 2rem;
-  color: #d9296f;
+  color: #ca4528;
 }
 
 .banner .content h3 {
@@ -605,7 +628,7 @@ section {
 }
 
 .blogs .box-container .box .content .link:hover {
-  color: #d9296f;
+  color: #ca4528;
 }
 
 .blogs .box-container .box .content p {
@@ -634,12 +657,12 @@ section {
 }
 
 .blogs .box-container .box .content .icon a:hover {
-  color: #d9296f;
+  color: #ca4528;
 }
 
 .blogs .box-container .box .content .icon a i {
   padding-right: .5rem;
-  color: #d9296f;
+  color: #ca4528;
 }
 
 
@@ -679,7 +702,7 @@ section {
 
 .footer .box-container .box p i {
   padding-right: .5rem;
-  color: #d9296f;
+  color: #ca4528;
 }
 
 .footer .box-container .box .share {
@@ -693,14 +716,14 @@ section {
   font-size: 2rem;
   border-radius: 50%;
   font-size: 1.7rem;
-  border: 0.2rem solid #d9296f;
-  color: #d9296f;
+  border: 0.2rem solid #ca4528;
+  color: #ca4528;
   margin-right: .5rem;
   text-align: center;
 }
 
 .footer .box-container .box .share a:hover {
-  background: #d9296f;
+  background: #ca4528;
   color: #f8f9fc;
 }
 
@@ -712,7 +735,7 @@ section {
 }
 
 .footer .box-container .box .links:hover {
-  color: #d9296f;
+  color: #ca4528;
 }
 
 .footer .box-container .box .links:hover i {
@@ -721,13 +744,13 @@ section {
 
 .footer .box-container .box .links i {
   padding-right: .5rem;
-  color: #d9296f;
+  color: #ca4528;
 }
 
 .footer .box-container .box form .email {
   width: 100%;
   border-radius: 5rem;
-  border: 0.2rem solid #d9296f;
+  border: 0.2rem solid #ca4528;
   background: none;
   font-size: 1.5rem;
   text-transform: none;
@@ -746,7 +769,7 @@ section {
 }
 
 .credit span {
-  color: #d9296f;
+  color: #ca4528;
 }
 
 /*----responsive---------*/
