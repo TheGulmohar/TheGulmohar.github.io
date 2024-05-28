@@ -11,17 +11,22 @@
       type="image/x-icon"
       href="{% static 'travel_fox/images/logo.png' %}"
     />
+    {% comment %}
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    {% endcomment %}
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="static/travel_fox/css/style.css" />
+    
+    {% comment %}
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
+    {% endcomment %}
 
     {% comment %}
     <link
@@ -47,24 +52,24 @@
           style="width: auto; height: 75px; position: relative; top: -26px"
       /></a>
       <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"
-        ><span>T</span>he <span>G</span>ulmohar
+        ><span></span>The <span></span>Gulmohar
       </a>
 
       <nav class="navbar">
-        <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a>
+        <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">Home</a>
         <a data-aos="zoom-in-left" data-aos-delay="450" href="#about"
-          >about us</a
+          >About us</a
         >
         <a data-aos="zoom-in-left" data-aos-delay="750" href="#services"
-          >services</a
+          >Services</a
         >
         <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination"
-          >destination</a
+          >Destination</a
         >
         <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery"
-          >gallery</a
+          >Gallery</a
         >
-        <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">blogs</a>
+        <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">Blogs</a>
       </nav>
 
       <a
@@ -72,7 +77,7 @@
         data-aos-delay="1300"
         href="#BookNow"
         class="btn"
-        >book now</a
+        >Book Now</a
       >
     </header>
 
@@ -105,8 +110,7 @@
       <div class="col-lg-8 mx-auto text-white text-center">
         <h2 class="text-white">Book your stay with us</h2>
         <p class="lead">
-          Experience Unforgettable Memories at Our Guest House - Where Comfort
-          Meets Inspiration
+          
         </p>
         <a
           data-aos="fade-up"
@@ -114,7 +118,7 @@
           href="#"
           class="btn"
           style="
-            background-color: #fff;
+            background-color: #ffffff;
             color: #333;
             padding: 10px 20px;
             border-radius: 30px;
@@ -164,15 +168,14 @@
       </style>
       <div class="col-lg-8 mx-auto text-white text-center">
         <h2 class="text-white" data-aos="fade-up" data-aos-delay="150">
-          Book Your Stay with Us
+          Coming Soon
         </h2>
         <!--Highlite Where comfort meets insperation-->
         <p class="lead" data-aos="fade-up" data-aos-delay="300">
-          Experience Unforgettable Memories at Our Guest House - Where Comfort
-          Meets Inspiration
+          Relax and unwind during the magical monsoons at our boutique guest house, thoughtfully designed for a modern global traveler.
         </p>
         <a data-aos="fade-up" data-aos-delay="450" href="#BookNow" class="btn"
-          >book now</a
+          >Book Now</a
         >
       </div>
     </section>
@@ -234,7 +237,7 @@
         />
         {% endcomment %}
         <video
-          src="static/travel_fox/images/production ID-4147886.mp4"
+          src="static/travel_fox/images/banner.mp4"
           muted
           autoplay
           loop
@@ -243,12 +246,18 @@
       </div>
 
       <div class="content" data-aos="fade-left" data-aos-delay="600">
-        <span>sugam hospitality</span>
-        <h3>Relax and Unwind</h3>
+        <span>Sugam Hospitality Solutions</span>
+        <h3>About The Gulmohar</h3>
         <p>
-          The Gulmohar is a charming guesthouse that offers 2 comfortable suites
-          and a tranquil garden setting. Escape from the hustle and bustle of
-          the city and unwind in our peaceful atmosphere.
+          Welcome to The Gulmohar! a boutique guest house nestled in the picturesque hills of Chikhaldara, Maharashtra. 
+          Our guest house offers a unique blend of modern comfort and eco-friendly practices, ensuring a memorable stay for our guests. 
+          We are committed to providing a relaxing and enjoyable experience amidst the serene beauty of Chikhaldara.
+        </p>
+
+        <p>
+          The motivation has always remained to make this place as much breathable as possible by providing adequate ventilation, 
+          lush green space where nature can do its magic and time do the trick to make this place valuable 
+          as the walls imprints your lovely memories and joyful time that you have spared from your busy lives and daily hustle.
         </p>
         <a href="#" class="btn">Learn More</a>
       </div>
@@ -260,7 +269,7 @@
 
     <section class="services" id="services">
       <div class="heading">
-        <span>our services</span>
+        <span>Amenities</span>
         <h1>Buget Friendly</h1>
       </div>
 
@@ -279,10 +288,9 @@
             >Eco friendly icons created by Freepik - Flaticon</i
           >
           {% endcomment %}
-          <h3>Tranquil Environment</h3>
+          <h3>Accomodation</h3>
           <p>
-            The Gulmohar Guesthouse is surrounded by a peaceful and calm
-            atmosphere, perfect for those looking for a relaxing holiday.
+            Multiple accomodation options for solo travellers, couples and families equipped with all modern facilities for a relaxing holiday.
           </p>
         </div>
 
@@ -291,7 +299,7 @@
             src="{% static 'travel_fox/images/icons/free-wifi.png' %}"
             style="width: 50px; height: 50px"
           />
-          <h3>Free Wifi</h3>
+          <h3>Complementary Wi-fi & Electric Charging Station</h3>
           {% comment %}
           <a
             href="https://www.flaticon.com/free-icons/free-wifi"
@@ -300,8 +308,7 @@
           >
           {% endcomment %}
           <p>
-            Stay connected during your stay with us. Our guesthouse offers free
-            and fast Wi-Fi access to all guests.
+            Stay connected with the rest of the world during your stay with us. The guest house is equipped with high speed wireless internet and workation friendly. We also have two dedicated Electric Vehicle charging facility, so that you do not worry about the extra mile that you can stretch with your EV at modest price. 
           </p>
         </div>
 
@@ -318,10 +325,9 @@
             >Breakfast icons created by Freepik - Flaticon</a
           >
           {% endcomment %}
-          <h3>Homemade Food and Free Breakfast</h3>
+          <h3>Cafe Gulmohar</h3>
           <p>
-            Enjoy delicious, homemade meals and a free, nutritious breakfast
-            each morning at the Gulmohar Guesthouse.
+            Relish delicious local and season inspired culinary delights and bring alive stories that inspire all around you. We offer special breakfast/brunch combos for you to kickstart your your day with full energy.
           </p>
         </div>
 
@@ -330,10 +336,9 @@
             src="{% static 'travel_fox/images/icons/barbeque.png' %}"
             style="width: 50px; height: 50px"
           />
-          <h3>Camp Fire and Barbeque available</h3>
+          <h3>Barbeque - Camp Fire</h3>
           <p>
-            Join us for a night of fun and relaxation around the campfire or
-            enjoy a barbeque with friends and family.
+            Enjoy the campfire stories with your favorite barbeque with a lot of stories of the eventful day.
           </p>
         </div>
 
@@ -349,10 +354,9 @@
             >Affordable icons created by Flat Icons - Flaticon</a
           >
           {% endcomment %}
-          <h3>affordable Price</h3>
+          <h3>Jungle Safari</h3>
           <p>
-            At the Gulmohar Guesthouse, we offer cost-effective rates without
-            sacrificing quality and comfort.
+          As a part of additional services, we help with the sightseeing information and tour packages, Melghat Tiger Reserve Jungle Safari, Gavilgarh Fort Hiking and guided tours, Nature Hikes, 2-wheeler self-drive rentals, and transfers to nearby airports and railway stations.
           </p>
         </div>
 
@@ -368,7 +372,7 @@
             >Availability icons created by Freepik - Flaticon</a
           >
           {% endcomment %}
-          <h3>support</h3>
+          <h3>Tents</h3>
           <p>
             Our guesthouse offers 24/7 support for our guests. You can reach us
             anytime for any help or support you may need during your stay with
@@ -384,17 +388,18 @@
 
     <section class="destination" id="destination">
       <div class="heading">
-        <span>our destination</span>
-        <h1>Keep looking up</h1>
+        <span>"Hospitality Begins At Heart!"</span>
+        <h1>Accomodation Options</h1>
       </div>
 
       <div class="box-container">
         <div class="box" data-aos="fade-up" data-aos-delay="150">
           <div class="image">
-            <img src="{% static 'assets/gulmohar_imgs/room1.JPG' %}" alt="" />
+            <img src="{% static 'assets/gulmohar_imgs/stay_tuned2.JPG' %}" alt="" />
           </div>
           <div class="content">
-            <p>Spacious Bedroom: "Comfortable and roomy sleeping quarters</p>
+            <h1>Suite</h1>
+            <p>Designed to offer comfort and convenience, these are perfect stay for couples or small family looking for a cozy retreat with a step out terrace, premium fixtured bathroom. </p>
             <a href="#">read more <i class="fas fa-angle-right"></i></a>
           </div>
         </div>
@@ -402,12 +407,13 @@
         <div class="box" data-aos="fade-up" data-aos-delay="300">
           <div class="image">
             <img
-              src="{% static 'assets/gulmohar_imgs/livingroom2.jpg' %}"
+              src="{% static 'assets/gulmohar_imgs/stay_tuned2.jpg' %}"
               alt=""
             />
           </div>
           <div class="content">
-            <p>Bright and inviting living area.</p>
+            <h1>Standard Suite Rooms with Attic</h1>
+            <p>Our attic rooms offer a unique and charming setting, perfect for small families or couples seeking a romantic getaway under the roof </p>
             <a href="#">read more <i class="fas fa-angle-right"></i></a>
           </div>
         </div>
@@ -415,26 +421,29 @@
         <div class="box" data-aos="fade-up" data-aos-delay="450">
           <div class="image">
             <img
-              src="{% static 'assets/gulmohar_imgs/frontview2.jpg' %}"
+              src="{% static 'assets/gulmohar_imgs/stay_tuned2.jpg' %}"
               alt=""
             />
           </div>
           <div class="content">
-            <p>Greeted with a warm and cozy atmosphere</p>
+            <h1>Owner's Den</h1>
+            <p>
+              Tucked away in a corner for a previledged view of the garden and the Cafe Gulmohar, this suites provide a homely feeling, intended for those who prefer long stays. The ultimate in luxury, this suite has large bedroom, independent balcony, compact kitchenette and premium fixtured bathroom.</p>
             <a href="#">read more <i class="fas fa-angle-right"></i></a>
           </div>
         </div>
 
         <div class="box" data-aos="fade-up" data-aos-delay="600">
           <div class="image">
-            <img src="{% static 'assets/gulmohar_imgs/parking.jpg' %}" alt="" />
+            <img src="{% static 'assets/gulmohar_imgs/stay_tuned2.jpg' %}" alt="" />
           </div>
           <div class="content">
-            <p>Convenient and hassle-free parking available</p>
+            <h1>Standard Suite Rooms</h1>
+            <p>Designed to offer comfort and convenience, providing the perfect stay for couples or solo travellers looking for a cozy retreat.</p>
             <a href="#">read more <i class="fas fa-angle-right"></i></a>
           </div>
         </div>
-
+        {% comment %}
         <div class="box" data-aos="fade-up" data-aos-delay="750">
           <div class="image">
             <img
@@ -461,7 +470,7 @@
           </div>
         </div>
 
-        {% comment %}
+        
         <div class="box" data-aos="fade-up" data-aos-delay="1150">
           <div class="image">
             <img src="images/des-7.jpg" alt="" />
@@ -486,20 +495,57 @@
     </section>
 
     <!-- destination section ends -->
-
+<!-- Cafe Gulmohar section starts -->
+{% comment %}
+<section class="Cafe" id="Cafe">
+  <div class="heading">
+    <div class="box-container">
+      <div class="row">
+        <div class="col-lg-4 my-auto">
+          <h1 class="heading h1">Cafe Gulmohar</h1>
+          <p class="lead"><span>Relax & Unwind with the sip of coffee and your favorite snack.</span></p>
+          <div class="buttons">
+            <button type="button" class="btn bg-gradient-warning mt-4">Discover</button>
+          </div>
+        </div>
+        <div class="col-lg-8 ps-5 pe-0">
+          <div class="row mt-3">
+            <div class="col-lg-3 col-6">
+              <img class="w-100 border-radius-lg shadow mt-0 mt-lg-7" src="../../assets/img/examples/header-5-img-1.jpg" alt="flower-1" loading="lazy">
+            </div>
+            <div class="col-lg-3 col-6">
+              <img class="w-100 border-radius-lg shadow" src="../../assets/img/examples/header-5-img-2.jpg" alt="flower-2" loading="lazy">
+              <img class="w-100 border-radius-lg shadow mt-4" src="../../assets/img/examples/header-5-img-3.jpg" alt="flower-3" loading="lazy">
+            </div>
+            <div class="col-lg-3 col-6 mb-3">
+              <img class="w-100 border-radius-lg shadow mt-0 mt-lg-5" src="../../assets/img/examples/header-5-img-4.jpg" alt="flower-4" loading="lazy">
+              <img class="w-100 border-radius-lg shadow mt-4" src="../../assets/img/examples/header-5-img-5.jpg" alt="flower-5" loading="lazy">
+            </div>
+            <div class="col-lg-3 col-6">
+              <img class="w-100 border-radius-lg shadow mt-3" src="../../assets/img/examples/header-5-img-6.jpg" alt="flower-6" loading="lazy">
+              <img class="w-100 border-radius-lg shadow mt-4" src="../../assets/img/examples/header-5-img-7.jpg" alt="flower-7" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Cafe Gulmohar section ends -->
+{% endcomment %}
     <!-- Gallery section starts  -->
 
     <section class="gallery" id="gallery">
       <div class="heading">
-        <span>our gallery</span>
-        <h1>Memories last forever</h1>
+        <span>Gallery</span>
+        <h1>The Nostalgia</h1>
       </div>
 
       <div class="box-container">
         <!-- 1  -->
         <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
           <img
-            src="{% static 'assets/gulmohar_imgs/front_alle.JPG' %}"
+            src="{% static 'assets/gulmohar_imgs/frontlogo.JPG' %}"
             alt=""
           />
           {% comment %} <span>travel spot</span> {% endcomment %} {% comment %}
@@ -525,7 +571,7 @@
 
         <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
           <img
-            src="{% static 'assets/gulmohar_imgs/LivingRoom.jpg' %}"
+            src="{% static 'assets/gulmohar_imgs/inlogo.jpg' %}"
             alt=""
           />
           {% comment %} <span>travel spot</span> {% endcomment %} {% comment %}
@@ -633,8 +679,8 @@
       </div>
 
       <div class="content" data-aos="fade-left" data-aos-delay="600">
-        <span>testimonials</span>
-        <h3>good news from our clients</h3>
+        <span>Testimonials</span>
+        <h3>Good news from our clients</h3>
         <p>Rated 4.7 on google, We provide one of best stay in Chikhaldhara.</p>
       </div>
     </section>
@@ -799,7 +845,7 @@ review section ends -->
               font-family: 'Open Sans', sans-serif;
             "
           >
-            For booking, call us on this number:
+            For more information, dial us on this number:
           </p>
           <a
             style="
@@ -810,7 +856,7 @@ review section ends -->
               font-family: 'Open Sans', sans-serif;
             "
             href="tel:+919422116736"
-            >+919422116736</a
+            >+91 9422116736</a
           >
           <br />
 
@@ -827,7 +873,7 @@ review section ends -->
             +91 9422116736
           </p>
           {% endcomment %}
-          <a href="tel:+919422116736" class="btn">book now</a>
+          <a href="tel:+919422116736" class="btn">Book now</a>
         </div>
       </div>
     </div>
@@ -838,7 +884,7 @@ review section ends -->
 
     <section class="blogs" id="blogs">
       <div class="heading">
-        <span>blogs & posts</span>
+        <span>Blogs & Posts</span>
         <h1>Nearby Attractions</h1>
       </div>
 
@@ -851,11 +897,11 @@ review section ends -->
             />
           </div>
           <div class="content">
-            <a href="#" class="link">Bhemkund.</a>
+            <a href="#" class="link">Bhimkund.</a>
             <p>
-              Bhimkund is a Natural blue water tank located at a distance of
-              around 78 km from Chhattarpur district, on the way from
-              Chikhaldara to Pratwada.
+            Chikhaldara's history dates back to ancient times, with references to the region found in the epic Mahabharata. 
+            According to legend, the Pandava prince Bhima created the Bhimkund reservoir by striking the ground with his mace during their exile. 
+            This reservoir is believed to be located in Chikhaldara, adding to the region's mythological significance.
             </p>
             <div class="icon">
               <a href="#"><i class="fas fa-clock"></i> 05th Jan, 2023</a>
@@ -874,9 +920,15 @@ review section ends -->
           <div class="content">
             <a href="#" class="link">Melghat Tiger Reserve</a>
             <p>
-              he Melghat Tiger Reserve is found in the northern part of the
-              Amravati District, Maharashtra. it is one of the 9 tiger reserves
-              identified by Project Tiger.
+              Melghat Tiger Reserve, located in Central India on a southern extension of the Satpura Hill Range known 
+              as the Gavilgarh Hills, is a vital habitat for tigers. The Reserve's southern boundary is marked by a steep 
+              east-west ridge, with its highest point at Vairat (1178 m above sea level). Drained by five significant 
+              rivers—Khandu, Khapra, Sipna, Gadga, and Dolar, all tributaries of the Tapti—the River Tapti defines the 
+              Reserve's northern and eastern boundaries. Melghat stands as Maharashtra's premier biodiversity reserve. 
+              Its rugged terrain is interspersed with extensive plateaus, including Makhala, Chikhaldara, Chiladari, 
+              Patulda, and Gugamal. The Critical Tiger Habitat covers 1500.49 square kilometers and comprises five protected 
+              areas: Gugamal National Park, Melghat Sanctuary, Narnala, Ambabarwa, and Wan Sanctuaries. According to Champion 
+              and Seth (1968), the Reserve's forests are classified as Southern Tropical Dry Deciduous Forests.
             </p>
             <div class="icon">
               <a href="#"><i class="fas fa-clock"></i> 05th Jan, 2023</a>
