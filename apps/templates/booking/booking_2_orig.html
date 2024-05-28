@@ -1,0 +1,621 @@
+
+{% comment %} {% extends 'layouts/base.html' %} {% endcomment %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE HTML>
+<html lang="en-us" style>
+   <head>
+      <meta charset="utf-8" />
+      <title>The Hotel Prime - QloApps Reservation System</title>
+      <meta name="description" content="Hotel Branch Category" />
+      <meta name="generator" content="QloApps" />
+      <meta name="robots" content="index,follow" />
+      <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <link rel="icon" type="image/vnd.microsoft.icon" href="https://demo.qloapps.com/223-233-87-170/img/favicon.ico?1681711959" />
+      <link rel="shortcut icon" type="image/x-icon" href="https://demo.qloapps.com/223-233-87-170/img/favicon.ico?1681711959" />
+      
+      {% comment %} <link rel="stylesheet" href="{% static "assets/css/qloapps.css" %}" type="text/css" media="all" /> {% endcomment %}
+      {% comment %} <link rel="stylesheet" href="{% static "assets/css/qloapps.css" %}" type="text/css" media="all" /> {% endcomment %}
+{% comment %} <link rel="stylesheet" href="{% static 'travel_fox/css/style.css' %}"> {% endcomment %}
+
+      {% comment %}  Material ui{% endcomment %}
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <!-- Nucleo Icons -->
+    <link href="{{ ASSETS_ROOT }}/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="{{ ASSETS_ROOT }}/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/42d5adcbca.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <!-- CSS Files -->
+      
+    <link
+      id="pagestyle"
+      href="{{ ASSETS_ROOT }}/css/material-kit.min.css"
+      rel="stylesheet"
+    />
+
+
+      {% comment %} Demo bar  {% endcomment %}
+      {% comment %} <div class="wk_demo_bar">
+         <div class="wk_bar">
+            <div class="wk-demo-bar-timer">
+               <div class="wk-expire-text">Expire in</div>
+               <div id="wk_demo_timer_watch"></div>
+            </div>
+            <div class="wk-demo-bar-module">
+               <h4>QloApps Hotel Reservation System | v1.6.0.0</h4>
+            </div>
+            <div class="wk-demo-bar-btn">
+               <a style="display:none;" href="javascript:void(0);" style="font-size:15px;" class="myDemoBtns-icon" onclick="myFunction()">&#9776;</a>
+               <div class="wk-demo-bar-btn-links" id="myDemoBtns"> <a class="wk-btn-demo-bar" href="https://demo.qloapps.com/223-233-87-170/adminhtl" target="_blank">Explore Back Office</a> <a class="wk-btn-demo-bar" href="https://qloapps.com/download/" target="_blank">Download</a> <a class="wk-btn-demo-bar" href="https://qloapps.com/qlo-reservation-system/" target="_blank">Documentation</a> <a href="https://demo.qloapps.com/feedback?tid=41386" class="wk-demo-bar-btn-exit" id="wkDemoBarBtnExit">Exit Demo<img style="vertical-align:middle;margin-left: 5px;" src="/223-233-87-170/modules/qloinstaller/views/img/icon-exit-demo.png" /></a></div>
+            </div>
+         </div>
+      </div>
+      <a href="javascript:void(0);" class="wk-demo-bar-collapse"></a> <!--[if IE 8]>  {% endcomment %}
+
+      {% comment %} <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>  {% endcomment %}
+      {% comment %} <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script> <![endif]--> {% endcomment %}
+      {% comment %} JQuery  {% endcomment %}
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+      
+      <script type="text/javascript" src="{% static "assets/js/qloapps/wk-room-search-block.js" %}" defer></script>
+      <script type="text/javascript" src="{% static "assets/js/qloapps/wk-roomtype-search.js" %}" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<!-- Font Awesome CSS -->
+
+
+   </head>
+
+   <body id="category" class="category show-left-column hide-right-column lang_en" style>
+
+      <header class="header">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <a href="#" style="width: 10px; height: 20px"
+        ><img
+          class="gul-logo"
+          src="{% static 'travel_fox/images/logo.png' %}"
+          style="width: auto; height: 75px; position: relative; top: -26px"
+      /></a>
+      <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"
+        style="text-align: left;"><span>T</span>he <span>G</span>ulmohar
+      </a>
+    </header>
+    <section></section>
+      <section> 
+      <div id="page" style>
+
+         <div class="columns-container">
+            <div id="columns" class="container">
+               <div id="slider_row" class="row">
+                  <div id="top_column" class="center_column col-xs-12 col-sm-12"></div>
+               </div>
+               <div class="row">
+                  <div id="left_column" class="column col-xs-12 col-sm-3">
+                     <div class="header-rmsearch-wrapper">
+                        <div class="filter_header clearfix">
+                           <p>Search Rooms</p>
+                           <hr class="header-bottom-hr">
+                        </div>
+                        <form method="POST" id="search_hotel_block_form" class="grid">
+                           <section class="py-7">
+                              <div class="container">
+                                <div class="row justify-space-between py-2">
+                                  <div class="col-lg-4 mx-auto">
+                                    <div class="input-group input-group-outline mb-4">
+                              <div id="daterange_value" autocomplete="off" placeholder="Check-in - Check-out">
+                              {% comment %} <input hidden=True type="text" name="daterange" value="01/01/2018 - 01/15/2018" /> {% endcomment %}
+                              <i class="fa fa-calendar"></i>
+                              <span>Check-in &nbsp;<i class="icon icon-minus"></i>&nbsp; Check-out</span>
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </section>
+                           <div class="form-group area-7">
+                              
+                              {% comment %} <input type="hidden" id="check_in_time" name="check_in_time" value="2024-04-10"> {% endcomment %}
+                              {% comment %} <input type="hidden" id="check_out_time" name="check_out_time" value="2024-04-11"> {% endcomment %}
+                              <div id="daterange_value" autocomplete="off" placeholder="Check-in - Check-out">
+                              {% comment %} <input hidden=True type="text" name="daterange" value="01/01/2018 - 01/15/2018" /> {% endcomment %}
+                              <i class="fa fa-calendar"></i>
+                              <span>Check-in &nbsp;<i class="icon icon-minus"></i>&nbsp; Check-out</span>
+                           </div>
+                           </div>
+
+                           {% comment %} <div class="form-group area-7">
+                              <input type="hidden" id="check_in_time" name="check_in_time" value="2024-04-10">
+                              <input type="hidden" id="check_out_time" name="check_out_time" value="2024-04-11">
+                              <div class="input-group">
+                                  <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                  </div>
+                                  <input type="text" class="form-control header-rmsearch-input input-date" id="daterange_value" autocomplete="off" placeholder="Check-in - Check-out">
+                              </div>
+                              <input type="hidden" name="daterange" value="01/01/2018 - 01/15/2018" />
+                              <span>Check-in &nbsp;<i class="icon icon-minus"></i>&nbsp; Check-out</span>
+                          </div> {% endcomment %}
+                          
+
+                           
+                           <div class="form-group area-2">
+                              <div class="dropdown">
+                                 <button class="form-control input-occupancy header-rmsearch-input " type="button" data-toggle="dropdown" id="guest_occupancy"> <span class="pull-left">1 Adult, 1 Room</span> </button>
+                                 <div id="search_occupancy_wrapper" class="dropdown-menu">
+                                    <div id="occupancy_inner_wrapper">
+                                       <div class="occupancy-room-block">
+                                          <div class="occupancy_info_head"><span class="room_num_wrapper">Room - 1 </span></div>
+                                          <div class="occupancy_info_block" occ_block_index="0">
+                                             <div class="row">
+                                                <div class="form-group occupancy_count_block col-sm-5 col-xs-6">
+                                                   <label>Adults</label>
+                                                   <div>
+                                                      <input type="hidden" class="num_occupancy num_adults room_occupancies" name="occupancy[0][adults]" value="1">
+                                                      <div class="occupancy_count pull-left"> <span>1</span></div>
+                                                      <div class="qty_direction pull-left"> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_up"> <span><i class="icon-plus"></i></span> </a> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_down"> <span><i class="icon-minus"></i></span> </a></div>
+                                                   </div>
+                                                </div>
+                                                <div class="form-group occupancy_count_block col-sm-7 col-xs-6">
+                                                   <label>Children</label>
+                                                   <div class="clearfix">
+                                                      <input type="hidden" class="num_occupancy num_children room_occupancies" name="occupancy[0][children]" value="0">
+                                                      <div class="occupancy_count pull-left"> <span>0</span></div>
+                                                      <div class="qty_direction pull-left"> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_up"> <span><i class="icon-plus"></i></span> </a> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_down"> <span><i class="icon-minus"></i></span> </a></div>
+                                                   </div>
+                                                   <p class="label-desc-txt">(Below 15 years)</p>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="form-group children_age_info_block col-sm-12">
+                                                   <label>All Children</label>
+                                                   <div class="children_ages"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <hr class="occupancy-info-separator">
+                                       </div>
+                                    </div>
+                                    <div id="add_new_occupancy"> <a class="add_new_occupancy_btn" href="#"><i class="icon-plus"></i> <span>Add Room</span></a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group search_room_submit_block area-4"> <button type="submit" class="btn btn btn-primary pull-right" name="search_room_submit" id="search_room_submit"> <span>Search Rooms</span> </button></div>
+                        </form>
+                     </div>
+                     <div id="filter_results" class="row block">
+                        <div class="col-sm-12">
+                           <div class="row margin-lr-0 layered_filter_cont">
+                              <div class="col-sm-12 layered_filter_heading">
+                                 <div class="row margin-lr-0">
+                                    <div class="pull-left lf_headingmain_wrapper">
+                                       <span>Amenities</span>
+                                       <hr class="theme-text-underline">
+                                    </div>
+                                    <span class="pull-right clear_filter">Clear Filter</span>
+                                 </div>
+                              </div>
+                              <div class="col-sm-12 lf_sub_cont">
+                                 <div class="layered_filt"> <input type="checkbox" class="filter" data-type="amenities" value="1"> <span class="filters_name">Wi-Fi</span></div>
+                                 <div class="layered_filt"> <input type="checkbox" class="filter" data-type="amenities" value="2"> <span class="filters_name">News Paper</span></div>
+                                 <div class="layered_filt"> <input type="checkbox" class="filter" data-type="amenities" value="3"> <span class="filters_name">Power BackUp</span></div>
+                                 <div class="layered_filt"> <input type="checkbox" class="filter" data-type="amenities" value="4"> <span class="filters_name">Refrigerator</span></div>
+                                 <div class="layered_filt"> <input type="checkbox" class="filter" data-type="amenities" value="5"> <span class="filters_name">Restaurant</span></div>
+                                 <div class="layered_filt"> <input type="checkbox" class="filter" data-type="amenities" value="6"> <span class="filters_name">Room Service</span></div>
+                                 <div class="layered_filt"> <input type="checkbox" class="filter" data-type="amenities" value="7"> <span class="filters_name">Gym</span></div>
+                              </div>
+                           </div>
+                           <div class="row margin-lr-0 layered_filter_cont">
+                              <div class="col-sm-12 layered_filter_heading">
+                                 <div class="row margin-lr-0">
+                                    <div class="pull-left lf_headingmain_wrapper">
+                                       <span>Price</span>
+                                       <hr class="theme-text-underline">
+                                    </div>
+                                    <span class="pull-right clear_filter">Clear Filter</span>
+                                 </div>
+                              </div>
+                              <div class="col-sm-12 lf_sub_cont">
+                                 <div class="row margin-lr-0 price_filter_subcont"> <span class="pull-left">₹ <span id="filter_price_from">1125</span> </span> <span class="pull-right">₹ <span id="filter_price_to">2812.5</span> </span></div>
+                                 <div id="filter_price_silder"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row margin-lr-0 layered_filter_cont" id="search-results-wrap">
+                        <div class="col-sm-12 layered_filter_heading">
+                           <div class="row margin-lr-0">
+                              <div class="pull-left lf_headingmain_wrapper">
+                                 <span>Directions</span>
+                                 <hr class="theme-text-underline">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-12 lf_sub_cont">
+                           <div class="map-wrap"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="center_column" class="center_column col-xs-12 col-sm-9">
+                     <div class="row cat_cont">
+                        <div class="col-sm-12">
+                           <div class="row margin-lr-0 catSortBlock">
+                              <div class="col-sm-2 sortBlockHeading">
+                                 <p>Sort By:</p>
+                              </div>
+                              <div class="col-sm-3">
+                                 <div class="filter_dw_cont">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="price_ftr" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="pull-left sort_btn_span" data-sort-by="0" data-sort-value="0" data-sort-for="Price">Price</span> <span class="caret pull-right margin-top-7"></span> </button>
+                                    <ul class="dropdown-menu" aria-labelledby="price_ftr">
+                                       <li><a href="#" class="sort_result" data-sort-by="2" data-value="1">Price : Lowest First</a></li>
+                                       <li><a href="#" class="sort_result" data-sort-by="2" data-value="2">Price : Highest first </a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <input type="hidden" id="max_order_date" name="max_order_date" value="2024-04-11">
+                           <div class="row margin-lr-0" id="category_data_cont">
+                              <div class="col-sm-12 room_cont" data-id-product="1">
+                                 <div class="row">
+                                    <div class="col-sm-4"> <a href="https://demo.qloapps.com/223-233-87-170/en/home/1-super-delux-rooms.html?date_from=2024-04-10&amp;date_to=2024-04-11&amp;occupancy%5B0%5D%5Badults%5D=1&amp;occupancy%5B0%5D%5Bchildren%5D=0"> <img src="https://demo.qloapps.com/223-233-87-170/1-home_default/super-delux-rooms.jpg" class="img-responsive room-type-image"> </a></div>
+                                    <div class="col-sm-8 room_info_cont">
+                                       <div class="row">
+                                          <p class="rm_heading col-sm-12 col-md-7">General Rooms</p>
+                                          <p class="rm_left col-sm-12 col-md-5"> Hurry! <span class="remain_rm_qty">5</span> rooms left</p>
+                                       </div>
+                                       <div class="rm_desc">
+                                          <p>Fashion axe kogi yuccie, ramps shabby chic direct trade before they sold out distillery bicycle rights. Slow-carb +1 quinoa VHS. +1 brunch trust fund, meggings chartreuse sustainable ever&nbsp;<a href="https://demo.qloapps.com/223-233-87-170/en/home/1-super-delux-rooms.html?date_from=2024-04-10&amp;date_to=2024-04-11&amp;occupancy%5B0%5D%5Badults%5D=1&amp;occupancy%5B0%5D%5Bchildren%5D=0">View More....</a>
+                                       </div>
+                                       <div class="room_features_cont">
+                                          <div class="row">
+                                             <div class="col-sm-12 col-md-5 col-lg-6">
+                                                <p class="rm_amenities_cont"> <img title="Wi-Fi" src="https://demo.qloapps.com/223-233-87-170/img/rf/1.jpg" class="rm_amen"> <img title="News Paper" src="https://demo.qloapps.com/223-233-87-170/img/rf/2.jpg" class="rm_amen"> <img title="Power BackUp" src="https://demo.qloapps.com/223-233-87-170/img/rf/3.jpg" class="rm_amen"> <img title="Refrigerator" src="https://demo.qloapps.com/223-233-87-170/img/rf/4.jpg" class="rm_amen"></p>
+                                             </div>
+                                             <div class="col-sm-12 hidden-md hidden-lg">
+                                                <p class="capa_txt"><span>4 Max guests:</span><span class="capa_data"> 2 Adults, 2 Children</span></p>
+                                             </div>
+                                             <div class="col-sm-12 col-md-7 col-lg-6">
+                                                <p class="rm_price_cont"> <span class="rm_price_val "> ₹ 1,406.25 </span> <span class="rm_price_txt">/Per Night</span></p>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="visible-md visible-lg">
+                                                <div class="capa_txt"><span>4 Max guests:</span><br><span class="capa_data"> 2 Adults, 2 Children</span></div>
+                                             </div>
+                                             <div class="col-sm-12 col-md-8 col-lg-9">
+                                                <div class="booking_room_fields">
+                                                   <div class="booking_guest_occupancy_conatiner">
+                                                      <div class="form-group dropdown">
+                                                         <button class="form-control booking_guest_occupancy input-occupancy" type="button"> <span class> Select Occupancy </span> </button>
+                                                         <div class="dropdown-menu booking_occupancy_wrapper">
+                                                            <input type="hidden" class="max_avail_type_qty" value="5"> <input type="hidden" class="max_adults" value="2"> <input type="hidden" class="max_children" value="2"> <input type="hidden" class="max_guests" value="4"> <input type="hidden" class="base_adult" value="2"> <input type="hidden" class="base_children" value="2">
+                                                            <div class="booking_occupancy_inner">
+                                                               <div class="occupancy_info_block" occ_block_index="0">
+                                                                  <div class="occupancy_info_head"><span class="room_num_wrapper">Room - 1</span></div>
+                                                                  <div class="row">
+                                                                     <div class="form-group col-sm-5 col-xs-6 occupancy_count_block">
+                                                                        <div class="row">
+                                                                           <label class="col-sm-12">Adults</label>
+                                                                           <div class="col-sm-12">
+                                                                              <input type="hidden" class="num_occupancy num_adults" name="num_adults[]" value="2">
+                                                                              <div class="occupancy_count pull-left"> <span>2</span></div>
+                                                                              <div class="qty_direction pull-left"> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_up"> <span> <i class="icon-plus"></i> </span> </a> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_down"> <span> <i class="icon-minus"></i> </span> </a></div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="form-group col-sm-7 col-xs-6 occupancy_count_block">
+                                                                        <div class="row">
+                                                                           <label class="col-sm-12">Children</label>
+                                                                           <div class="col-sm-12 clearfix">
+                                                                              <input type="hidden" class="num_occupancy num_children" name="num_children[]" value="0">
+                                                                              <div class="occupancy_count pull-left"> <span>0</span></div>
+                                                                              <div class="qty_direction pull-left"> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_up"> <span> <i class="icon-plus"></i> </span> </a> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_down"> <span> <i class="icon-minus"></i> </span> </a></div>
+                                                                           </div>
+                                                                           <div class="col-sm-12"> <span class="label-desc-txt">(Below 15 years)</span></div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="form-group row children_age_info_block">
+                                                                     <label class="col-sm-12">All Children</label>
+                                                                     <div class="col-sm-12">
+                                                                        <div class="children_ages"></div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <hr class="occupancy-info-separator">
+                                                               </div>
+                                                            </div>
+                                                            <div class="add_occupancy_block"> <a class="add_new_occupancy_btn" href="#"><i class="icon-plus"></i> <span>Add Room</span></a></div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div> <a cat_rm_check_in="2024-04-10" cat_rm_check_out="2024-04-11" href rm_product_id="1" cat_rm_book_nm_days="1" data-id-product-attribute="0" data-id-product="1" class="btn btn-default button button-medium ajax_add_to_cart_button"><span>Book Now</span></a></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-12 room_cont" data-id-product="2">
+                                 <div class="row">
+                                    <div class="col-sm-4"> <a href="https://demo.qloapps.com/223-233-87-170/en/home/2-super-delux-rooms.html?date_from=2024-04-10&amp;date_to=2024-04-11&amp;occupancy%5B0%5D%5Badults%5D=1&amp;occupancy%5B0%5D%5Bchildren%5D=0"> <img src="https://demo.qloapps.com/223-233-87-170/5-home_default/super-delux-rooms.jpg" class="img-responsive room-type-image"> </a></div>
+                                    <div class="col-sm-8 room_info_cont">
+                                       <div class="row">
+                                          <p class="rm_heading col-sm-12 col-md-7">Delux Rooms</p>
+                                          <p class="rm_left col-sm-12 col-md-5"> Hurry! <span class="remain_rm_qty">4</span> rooms left</p>
+                                       </div>
+                                       <div class="rm_desc">
+                                          <p>Fashion axe kogi yuccie, ramps shabby chic direct trade before they sold out distillery bicycle rights. Slow-carb +1 quinoa VHS. +1 brunch trust fund, meggings chartreuse sustainable ever&nbsp;<a href="https://demo.qloapps.com/223-233-87-170/en/home/2-super-delux-rooms.html?date_from=2024-04-10&amp;date_to=2024-04-11&amp;occupancy%5B0%5D%5Badults%5D=1&amp;occupancy%5B0%5D%5Bchildren%5D=0">View More....</a>
+                                       </div>
+                                       <div class="room_features_cont">
+                                          <div class="row">
+                                             <div class="col-sm-12 col-md-5 col-lg-6">
+                                                <p class="rm_amenities_cont"> <img title="Wi-Fi" src="https://demo.qloapps.com/223-233-87-170/img/rf/1.jpg" class="rm_amen"> <img title="News Paper" src="https://demo.qloapps.com/223-233-87-170/img/rf/2.jpg" class="rm_amen"> <img title="Power BackUp" src="https://demo.qloapps.com/223-233-87-170/img/rf/3.jpg" class="rm_amen"> <img title="Refrigerator" src="https://demo.qloapps.com/223-233-87-170/img/rf/4.jpg" class="rm_amen"></p>
+                                             </div>
+                                             <div class="col-sm-12 hidden-md hidden-lg">
+                                                <p class="capa_txt"><span>4 Max guests:</span><span class="capa_data"> 2 Adults, 2 Children</span></p>
+                                             </div>
+                                             <div class="col-sm-12 col-md-7 col-lg-6">
+                                                <p class="rm_price_cont"> <span class="rm_price_val "> ₹ 1,968.75 </span> <span class="rm_price_txt">/Per Night</span></p>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="visible-md visible-lg">
+                                                <div class="capa_txt"><span>4 Max guests:</span><br><span class="capa_data"> 2 Adults, 2 Children</span></div>
+                                             </div>
+                                             <div class="col-sm-12 col-md-8 col-lg-9">
+                                                <div class="booking_room_fields">
+                                                   <div class="booking_guest_occupancy_conatiner">
+                                                      <div class="form-group dropdown">
+                                                         <button class="form-control booking_guest_occupancy input-occupancy" type="button"> <span class> Select Occupancy </span> </button>
+                                                         <div class="dropdown-menu booking_occupancy_wrapper">
+                                                            <input type="hidden" class="max_avail_type_qty" value="4"> <input type="hidden" class="max_adults" value="2"> <input type="hidden" class="max_children" value="2"> <input type="hidden" class="max_guests" value="4"> <input type="hidden" class="base_adult" value="2"> <input type="hidden" class="base_children" value="2">
+                                                            <div class="booking_occupancy_inner">
+                                                               <div class="occupancy_info_block" occ_block_index="0">
+                                                                  <div class="occupancy_info_head"><span class="room_num_wrapper">Room - 1</span></div>
+                                                                  <div class="row">
+                                                                     <div class="form-group col-sm-5 col-xs-6 occupancy_count_block">
+                                                                        <div class="row">
+                                                                           <label class="col-sm-12">Adults</label>
+                                                                           <div class="col-sm-12">
+                                                                              <input type="hidden" class="num_occupancy num_adults" name="num_adults[]" value="2">
+                                                                              <div class="occupancy_count pull-left"> <span>2</span></div>
+                                                                              <div class="qty_direction pull-left"> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_up"> <span> <i class="icon-plus"></i> </span> </a> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_down"> <span> <i class="icon-minus"></i> </span> </a></div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="form-group col-sm-7 col-xs-6 occupancy_count_block">
+                                                                        <div class="row">
+                                                                           <label class="col-sm-12">Children</label>
+                                                                           <div class="col-sm-12 clearfix">
+                                                                              <input type="hidden" class="num_occupancy num_children" name="num_children[]" value="0">
+                                                                              <div class="occupancy_count pull-left"> <span>0</span></div>
+                                                                              <div class="qty_direction pull-left"> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_up"> <span> <i class="icon-plus"></i> </span> </a> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_down"> <span> <i class="icon-minus"></i> </span> </a></div>
+                                                                           </div>
+                                                                           <div class="col-sm-12"> <span class="label-desc-txt">(Below 15 years)</span></div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="form-group row children_age_info_block">
+                                                                     <label class="col-sm-12">All Children</label>
+                                                                     <div class="col-sm-12">
+                                                                        <div class="children_ages"></div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <hr class="occupancy-info-separator">
+                                                               </div>
+                                                            </div>
+                                                            <div class="add_occupancy_block"> <a class="add_new_occupancy_btn" href="#"><i class="icon-plus"></i> <span>Add Room</span></a></div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div> <a cat_rm_check_in="2024-04-10" cat_rm_check_out="2024-04-11" href rm_product_id="2" cat_rm_book_nm_days="1" data-id-product-attribute="0" data-id-product="2" class="btn btn-default button button-medium ajax_add_to_cart_button"><span>Book Now</span></a></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-12 room_cont" data-id-product="3">
+                                 <div class="row">
+                                    <div class="col-sm-4"> <a href="https://demo.qloapps.com/223-233-87-170/en/home/3-super-delux-rooms.html?date_from=2024-04-10&amp;date_to=2024-04-11&amp;occupancy%5B0%5D%5Badults%5D=1&amp;occupancy%5B0%5D%5Bchildren%5D=0"> <img src="https://demo.qloapps.com/223-233-87-170/9-home_default/super-delux-rooms.jpg" class="img-responsive room-type-image"> </a></div>
+                                    <div class="col-sm-8 room_info_cont">
+                                       <div class="row">
+                                          <p class="rm_heading col-sm-12 col-md-7">Executive Rooms</p>
+                                          <p class="rm_left col-sm-12 col-md-5"> Hurry! <span class="remain_rm_qty">5</span> rooms left</p>
+                                       </div>
+                                       <div class="rm_desc">
+                                          <p>Fashion axe kogi yuccie, ramps shabby chic direct trade before they sold out distillery bicycle rights. Slow-carb +1 quinoa VHS. +1 brunch trust fund, meggings chartreuse sustainable ever&nbsp;<a href="https://demo.qloapps.com/223-233-87-170/en/home/3-super-delux-rooms.html?date_from=2024-04-10&amp;date_to=2024-04-11&amp;occupancy%5B0%5D%5Badults%5D=1&amp;occupancy%5B0%5D%5Bchildren%5D=0">View More....</a>
+                                       </div>
+                                       <div class="room_features_cont">
+                                          <div class="row">
+                                             <div class="col-sm-12 col-md-5 col-lg-6">
+                                                <p class="rm_amenities_cont"> <img title="Wi-Fi" src="https://demo.qloapps.com/223-233-87-170/img/rf/1.jpg" class="rm_amen"> <img title="News Paper" src="https://demo.qloapps.com/223-233-87-170/img/rf/2.jpg" class="rm_amen"> <img title="Power BackUp" src="https://demo.qloapps.com/223-233-87-170/img/rf/3.jpg" class="rm_amen"> <img title="Refrigerator" src="https://demo.qloapps.com/223-233-87-170/img/rf/4.jpg" class="rm_amen"></p>
+                                             </div>
+                                             <div class="col-sm-12 hidden-md hidden-lg">
+                                                <p class="capa_txt"><span>4 Max guests:</span><span class="capa_data"> 2 Adults, 2 Children</span></p>
+                                             </div>
+                                             <div class="col-sm-12 col-md-7 col-lg-6">
+                                                <p class="rm_price_cont"> <span class="rm_price_val "> ₹ 2,531.25 </span> <span class="rm_price_txt">/Per Night</span></p>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="visible-md visible-lg">
+                                                <div class="capa_txt"><span>4 Max guests:</span><br><span class="capa_data"> 2 Adults, 2 Children</span></div>
+                                             </div>
+                                             <div class="col-sm-12 col-md-8 col-lg-9">
+                                                <div class="booking_room_fields">
+                                                   <div class="booking_guest_occupancy_conatiner">
+                                                      <div class="form-group dropdown">
+                                                         <button class="form-control booking_guest_occupancy input-occupancy" type="button"> <span class> Select Occupancy </span> </button>
+                                                         <div class="dropdown-menu booking_occupancy_wrapper">
+                                                            <input type="hidden" class="max_avail_type_qty" value="5"> <input type="hidden" class="max_adults" value="2"> <input type="hidden" class="max_children" value="2"> <input type="hidden" class="max_guests" value="4"> <input type="hidden" class="base_adult" value="2"> <input type="hidden" class="base_children" value="2">
+                                                            <div class="booking_occupancy_inner">
+                                                               <div class="occupancy_info_block" occ_block_index="0">
+                                                                  <div class="occupancy_info_head"><span class="room_num_wrapper">Room - 1</span></div>
+                                                                  <div class="row">
+                                                                     <div class="form-group col-sm-5 col-xs-6 occupancy_count_block">
+                                                                        <div class="row">
+                                                                           <label class="col-sm-12">Adults</label>
+                                                                           <div class="col-sm-12">
+                                                                              <input type="hidden" class="num_occupancy num_adults" name="num_adults[]" value="2">
+                                                                              <div class="occupancy_count pull-left"> <span>2</span></div>
+                                                                              <div class="qty_direction pull-left"> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_up"> <span> <i class="icon-plus"></i> </span> </a> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_down"> <span> <i class="icon-minus"></i> </span> </a></div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="form-group col-sm-7 col-xs-6 occupancy_count_block">
+                                                                        <div class="row">
+                                                                           <label class="col-sm-12">Children</label>
+                                                                           <div class="col-sm-12 clearfix">
+                                                                              <input type="hidden" class="num_occupancy num_children" name="num_children[]" value="0">
+                                                                              <div class="occupancy_count pull-left"> <span>0</span></div>
+                                                                              <div class="qty_direction pull-left"> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_up"> <span> <i class="icon-plus"></i> </span> </a> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_down"> <span> <i class="icon-minus"></i> </span> </a></div>
+                                                                           </div>
+                                                                           <div class="col-sm-12"> <span class="label-desc-txt">(Below 15 years)</span></div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="form-group row children_age_info_block">
+                                                                     <label class="col-sm-12">All Children</label>
+                                                                     <div class="col-sm-12">
+                                                                        <div class="children_ages"></div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <hr class="occupancy-info-separator">
+                                                               </div>
+                                                            </div>
+                                                            <div class="add_occupancy_block"> <a class="add_new_occupancy_btn" href="#"><i class="icon-plus"></i> <span>Add Room</span></a></div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div> <a cat_rm_check_in="2024-04-10" cat_rm_check_out="2024-04-11" href rm_product_id="3" cat_rm_book_nm_days="1" data-id-product-attribute="0" data-id-product="3" class="btn btn-default button button-medium ajax_add_to_cart_button"><span>Book Now</span></a></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-12 room_cont" data-id-product="4">
+                                 <div class="row">
+                                    <div class="col-sm-4"> <a href="https://demo.qloapps.com/223-233-87-170/en/4-super-delux-rooms.html?date_from=2024-04-10&amp;date_to=2024-04-11&amp;occupancy%5B0%5D%5Badults%5D=1&amp;occupancy%5B0%5D%5Bchildren%5D=0"> <img src="https://demo.qloapps.com/223-233-87-170/13-home_default/super-delux-rooms.jpg" class="img-responsive room-type-image"> </a></div>
+                                    <div class="col-sm-8 room_info_cont">
+                                       <div class="row">
+                                          <p class="rm_heading col-sm-12 col-md-7">Luxury Rooms</p>
+                                          <p class="rm_left col-sm-12 col-md-5"> Hurry! <span class="remain_rm_qty">5</span> rooms left</p>
+                                       </div>
+                                       <div class="rm_desc">Fashion axe kogi yuccie, ramps shabby chic direct trade before they sold out distillery bicycle rights. Slow-carb +1 quinoa VHS. +1 brunch trust fund, megging&nbsp;<a href="https://demo.qloapps.com/223-233-87-170/en/4-super-delux-rooms.html?date_from=2024-04-10&amp;date_to=2024-04-11&amp;occupancy%5B0%5D%5Badults%5D=1&amp;occupancy%5B0%5D%5Bchildren%5D=0">View More....</a></div>
+                                       <div class="room_features_cont">
+                                          <div class="row">
+                                             <div class="col-sm-12 col-md-5 col-lg-6">
+                                                <p class="rm_amenities_cont"> <img title="Wi-Fi" src="https://demo.qloapps.com/223-233-87-170/img/rf/1.jpg" class="rm_amen"> <img title="News Paper" src="https://demo.qloapps.com/223-233-87-170/img/rf/2.jpg" class="rm_amen"> <img title="Power BackUp" src="https://demo.qloapps.com/223-233-87-170/img/rf/3.jpg" class="rm_amen"> <img title="Refrigerator" src="https://demo.qloapps.com/223-233-87-170/img/rf/4.jpg" class="rm_amen"></p>
+                                             </div>
+                                             <div class="col-sm-12 hidden-md hidden-lg">
+                                                <p class="capa_txt"><span>4 Max guests:</span><span class="capa_data"> 2 Adults, 2 Children</span></p>
+                                             </div>
+                                             <div class="col-sm-12 col-md-7 col-lg-6">
+                                                <p class="rm_price_cont"> <span class="rm_price_val "> ₹ 3,093.75 </span> <span class="rm_price_txt">/Per Night</span></p>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="visible-md visible-lg">
+                                                <div class="capa_txt"><span>4 Max guests:</span><br><span class="capa_data"> 2 Adults, 2 Children</span></div>
+                                             </div>
+                                             <div class="col-sm-12 col-md-8 col-lg-9">
+                                                <div class="booking_room_fields">
+                                                   <div class="booking_guest_occupancy_conatiner">
+                                                      <div class="form-group dropdown">
+                                                         <button class="form-control booking_guest_occupancy input-occupancy" type="button"> <span class> Select Occupancy </span> </button>
+                                                         <div class="dropdown-menu booking_occupancy_wrapper">
+                                                            <input type="hidden" class="max_avail_type_qty" value="5"> <input type="hidden" class="max_adults" value="2"> <input type="hidden" class="max_children" value="2"> <input type="hidden" class="max_guests" value="4"> <input type="hidden" class="base_adult" value="2"> <input type="hidden" class="base_children" value="2">
+                                                            <div class="booking_occupancy_inner">
+                                                               <div class="occupancy_info_block" occ_block_index="0">
+                                                                  <div class="occupancy_info_head"><span class="room_num_wrapper">Room - 1</span></div>
+                                                                  <div class="row">
+                                                                     <div class="form-group col-sm-5 col-xs-6 occupancy_count_block">
+                                                                        <div class="row">
+                                                                           <label class="col-sm-12">Adults</label>
+                                                                           <div class="col-sm-12">
+                                                                              <input type="hidden" class="num_occupancy num_adults" name="num_adults[]" value="2">
+                                                                              <div class="occupancy_count pull-left"> <span>2</span></div>
+                                                                              <div class="qty_direction pull-left"> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_up"> <span> <i class="icon-plus"></i> </span> </a> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_down"> <span> <i class="icon-minus"></i> </span> </a></div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="form-group col-sm-7 col-xs-6 occupancy_count_block">
+                                                                        <div class="row">
+                                                                           <label class="col-sm-12">Children</label>
+                                                                           <div class="col-sm-12 clearfix">
+                                                                              <input type="hidden" class="num_occupancy num_children" name="num_children[]" value="0">
+                                                                              <div class="occupancy_count pull-left"> <span>0</span></div>
+                                                                              <div class="qty_direction pull-left"> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_up"> <span> <i class="icon-plus"></i> </span> </a> <a href="#" data-field-qty="qty" class="btn btn-default occupancy_quantity_down"> <span> <i class="icon-minus"></i> </span> </a></div>
+                                                                           </div>
+                                                                           <div class="col-sm-12"> <span class="label-desc-txt">(Below 15 years)</span></div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="form-group row children_age_info_block">
+                                                                     <label class="col-sm-12">All Children</label>
+                                                                     <div class="col-sm-12">
+                                                                        <div class="children_ages"></div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <hr class="occupancy-info-separator">
+                                                               </div>
+                                                            </div>
+                                                            <div class="add_occupancy_block"> <a class="add_new_occupancy_btn" href="#"><i class="icon-plus"></i> <span>Add Room</span></a></div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div> <a cat_rm_check_in="2024-04-10" cat_rm_check_out="2024-04-11" href rm_product_id="4" cat_rm_book_nm_days="1" data-id-product-attribute="0" data-id-product="4" class="btn btn-default button button-medium ajax_add_to_cart_button"><span>Book Now</span></a></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </section>
+      {% include 'gulmohar/footer.html' %} 
+      </div>
+   </body>
+</html>
+
+{% endblock content %}

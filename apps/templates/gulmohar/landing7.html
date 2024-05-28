@@ -17,7 +17,9 @@
     />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="static/travel_fox/css/style.css" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'travel_fox/css/style.css' %}">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
@@ -32,7 +34,7 @@
     {% endcomment %}
 
     <!-- custom js file link  -->
-    <script src="static/travel_fox/js/script.js" defer></script>
+    <script src="{% static 'travel_fox/js/script.js' %}" defer></script>
   </head>
 
   <body>

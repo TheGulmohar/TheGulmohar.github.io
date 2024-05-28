@@ -47,8 +47,8 @@ INSTALLED_APPS = [
     'livereload',
     'django.contrib.staticfiles',
     'apps.home',  # Enable the inner home (home)
-    'apps.gulmohar',
     'apps.booking',
+    'apps.gulmohar',
     #'livereload' # not needed in production
 ]
 

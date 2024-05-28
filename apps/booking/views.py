@@ -1,7 +1,11 @@
 from django.shortcuts import render
+
+from apps.booking.forms import AvailabilityForm
+from apps.utils.constants import RoomTypeEnum
 from .models import Room
 from apps.gulmohar.models import Customer
 from django.http import HttpResponse
+from django.db.models import Q
 
 # Create your views here.
 def room_list(request):
@@ -24,10 +28,57 @@ def user_management(request):
     return render(request, 'booking/user_management.html', {'users': users})
 
 
-from django.shortcuts import render, redirect
-from .models import Booking
+
+
+
+def book_sample(request):
+    if request.method == 'GET':
+        print("GRT TRIGGRED")
+        return render(request, "booking/booking_2.html", {})
+
+
+def check_availability(request):
+    
+    if request.method == 'POST':
+        form = AvailabilityForm(request.POST)
+        if form.is_valid():
+            start_date = form.cleaned_data['start_date']
+            end_date = form.cleaned_data['end_date']
+            room_type = form.cleaned_data['room_type']
+
+            if room_type:
+                rooms = Room.objects.filter(room_type=room_type)
+            else:
+                room = Room.objects.all()
+
+            available_rooms = rooms.exclude(
+                Q(booking__start_date__lt=end_date) & Q(booking__end_date__gt=start_date)
+            )
+
+            data_room = {}
+            if not room_type:
+                for room in RoomTypeEnum:
+                    data_room[room.name] = available_rooms.filter(room_type=room.value).count()
+            else:
+                data_room[room_type] = available_rooms.count()
+
+            context = {
+                'available_rooms': available_rooms,
+                'form': form,
+            }
+            return render(request, 'booking/booking_2.html', context)
+    else:
+        form = AvailabilityForm()
+    return render(request, 'booking/booking_2_orig.html', {'form': form})
+
+
 
 def book_room(request):
+    if request.method == 'GET':
+        print("GRT TRIGGRED")
+
+        return render(request, "booking/booking_2.html")
+
     if request.method == 'POST':
         room_number = request.POST['room_number']
         start_date = request.POST['start_date']
@@ -51,6 +102,7 @@ def book_room(request):
 
         html = "<html><body>Rooms are full</body></html>"    
         return HttpResponse(html)
+    
     customers = Customer.objects.all()
     return render(request, 'booking/booking.html', {'customers': customers})
 

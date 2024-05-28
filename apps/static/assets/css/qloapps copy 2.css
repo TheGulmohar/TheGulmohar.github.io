@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* html,
+html,
 body,
 div,
 span,
@@ -86,7 +86,7 @@ video {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
-} */
+}
 html {
   line-height: 1;
 }
@@ -6913,11 +6913,11 @@ header .row {
 header .row > .container {
   position: relative;
 }
-/* header .header-top > div > div > div {
+header .header-top > div > div > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-} */
+}
 header .row #header_logo {
   padding: 10px 0;
 }
