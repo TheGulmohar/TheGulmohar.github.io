@@ -1,0 +1,11 @@
+Run following commands
+python3 manage.py collectstatic
+python3 manage.py runserver
+
+on seperate terminal run
+./tools/site-dump
+
+git add 
+git commit 
+git push 
+mearge changes with github-pages
